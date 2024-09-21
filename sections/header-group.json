@@ -1,0 +1,134 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "type": "header",
+  "name": "t:sections.header.settings.header-group.label",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "height": 50,
+        "height_mobile": 40,
+        "color_scheme": "background-3",
+        "text": "Ihr Projekt, unsere Expertise – Stellen Sie jetzt Ihre Anfrage"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_list_bRLKHY": {
+          "type": "mega_menu_list",
+          "settings": {
+            "mega_menu_list_trigger": "Shop",
+            "small_menu": "shop-menu",
+            "show_mega_menu_1": true,
+            "height_1": "sm",
+            "color_scheme_1": "background-4",
+            "description_1": "",
+            "heading_1": "Heading",
+            "heading_1_size": "h4",
+            "image_1": "shopify:\/\/shop_images\/HOM-online_SCENA08-HR-4K-854x1024.jpg",
+            "overlay_opacity_1": 0,
+            "show_button_1": false,
+            "button_style_1": "primary",
+            "button_label_1": "Shop Now",
+            "button_link_1": "",
+            "show_mega_menu_2": true,
+            "height_2": "sm",
+            "color_scheme_2": "background-4",
+            "description_2": "",
+            "heading_2": "Heading",
+            "heading_2_size": "h4",
+            "image_2": "shopify:\/\/shop_images\/HOM-online_SCENA02-HR-4K.jpg",
+            "overlay_opacity_2": 0,
+            "show_button_2": false,
+            "button_style_2": "primary",
+            "button_label_2": "Shop Now",
+            "button_link_2": "",
+            "show_mega_menu_3": true,
+            "height_3": "md",
+            "color_scheme_3": "background-4",
+            "description_3": "",
+            "heading_3": "Heading",
+            "heading_3_size": "h5",
+            "image_3": "shopify:\/\/shop_images\/HOM-online_SCENA08-HR-4K-854x1024.jpg",
+            "overlay_opacity_3": 0,
+            "show_button_3": false,
+            "button_style_3": "primary",
+            "button_label_3": "Shop Now",
+            "button_link_3": ""
+          }
+        },
+        "mega_menu_wtBXJf": {
+          "type": "mega_menu",
+          "settings": {
+            "mega_menu_trigger": "Konfigurator",
+            "height": "md",
+            "small_menu": "configurator-menu",
+            "show_mega_menu_1": true,
+            "color_scheme_1": "background-1",
+            "description_1": "Made to create",
+            "heading_1": "LoftFX Configurator",
+            "image_1": "shopify:\/\/shop_images\/Screenshot_2024-04-18_at_22.59.03.png",
+            "overlay_opacity_1": 0,
+            "show_button": true,
+            "button_style": "primary",
+            "button_label": "Sign In",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_list_bRLKHY",
+        "mega_menu_wtBXJf"
+      ],
+      "settings": {
+        "enable_border": true,
+        "header_type": "left-logo",
+        "logo": "shopify:\/\/shop_images\/LoftFX_Logotype_Black_RGB.png",
+        "logo_2": "shopify:\/\/shop_images\/LOFTFX_logo_2023_light_2x_fe57fdfb-6b53-4134-bea0-35c8fd29c0e1.png",
+        "logo_width": 80,
+        "menu": "main-menu",
+        "small_menu": "sidebar-menu",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_social": true,
+        "sticky_header_type": "on-scroll-up",
+        "enable_search": true,
+        "show_search_promo": true,
+        "show_collection_card": true,
+        "collection_list": [
+
+        ],
+        "show_search_block": true,
+        "search_image": "shopify:\/\/shop_images\/HOM-online_SCENA08-HR-4K-854x1024.jpg",
+        "search_color_scheme": "",
+        "search_subheading": "",
+        "search_heading": "Heading",
+        "button_link": "",
+        "button_label": "Button label",
+        "button_style": "primary",
+        "overlay_opacity": 0,
+        "show_search_block_2": false,
+        "search_color_scheme_2": "",
+        "search_subheading_2": "",
+        "search_heading_2": "Heading",
+        "button_link_2": "",
+        "button_label_2": "Button label",
+        "button_style_2": "primary",
+        "overlay_opacity_2": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

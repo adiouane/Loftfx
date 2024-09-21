@@ -1,0 +1,1769 @@
+<div class="page-width">
+  <div class="product-inquiry">
+    <div class="product-inquiry__content">
+      <h1 class="product-inquiry__title">Produktanfrage</h1>
+      <p class="product-inquiry__text">Sie interessieren sich für unsere Stahl-Loft-Türen?</p>
+      <p class="product-inquiry__text">
+        Jedes Element wird individuell auf Ihren Wunsch angefertigt. Gerne gestalten wir mit Ihnen zusammen Ihre
+        individuelle Stahl-Loft-Tür.
+      </p>
+      <p class="product-inquiry__text">
+        Damit wir mit Ihnen gemeinsam ein Projekt realisieren können, benötigen wir im Vorfeld einige Informationen zu
+        Ihrem gewünschten Element. Füllen Sie bitte dazu das folgende Formular aus. Die Anfrage ist unverbindlich und
+        kostenlos. Wir werden uns schnellstmöglich mit einem individuellen Angebot bei Ihnen melden.
+      </p>
+    </div>
+    <div class="product-inquiry__image-container">
+      <img src="{{ 'loftfx-blueprint-tuer-produktanfrage_bg.jpg' | asset_url }}" alt="Produktanfrage Diagram"
+        class="product-inquiry__image" width="274" height="420">
+    </div>
+  </div>
+</div>
+
+{% comment %} product inquiry form {% endcomment %}
+<div class="page-width">
+  <div class="inquiry-tabs">
+    <div class="inquiry-tabs__nav">
+      <button class="inquiry-tabs__nav-item active" data-target="step1">
+        <span class="text">Elementtyp</span><span class="number">1</span>
+      </button>
+      <button class="inquiry-tabs__nav-item" data-target="step2">
+        <span class="text">Farbe & Verglasung</span><span class="number">2</span>
+      </button>
+      <button class="inquiry-tabs__nav-item" data-target="step3">
+        <span class="text">Griffe</span><span class="number">3</span>
+      </button>
+      <button class="inquiry-tabs__nav-item" data-target="step4">
+        <span class="text">Maße & Skizze</span><span class="number">4</span>
+      </button>
+      <button class="inquiry-tabs__nav-item" data-target="step5">
+        <span class="text">Kontakt</span><span class="number">5</span>
+      </button>
+    </div>
+
+    <form id="inquiry-form" class="inquiry-form">
+      <div id="step1" class="inquiry-tabs__content active">
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Elementtyp</h3>
+          <p class="inquiry-tab__description">
+            Wählen Sie zwischen Dreh-, Pivot- / Pendel-, Schiebetür und Festteil. Bei der Drehtür handelt es sich um
+            eine Tür mit klassischem Scharnier welche Sie zu einer Seite 90° öffnen können. Die Pivot- bzw. Pendeltür
+            hingegen können Sie in beide Richtungen öffnen.
+          </p>
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)"
+                      style="outline: none;">
+                      <path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z"
+                        transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;">
+                      </path>
+                      <path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z"
+                        transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z"
+                        transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)"
+                        style="outline: none;">
+                        <path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53"
+                          transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1"
+                          style="outline: none;"></path>
+                      </g>
+                      <path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z"
+                        transform="translate(466 6895.793)" fill="none" style="outline: none;"></path>
+                      <g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)"
+                        style="outline: none;">
+                        <path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e"
+                          style="outline: none;"></path>
+                      </g>
+                      <g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)"
+                        style="outline: none;">
+                        <path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z"
+                          transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Pivot-/Pendeltür">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)"
+                      style="outline: none;">
+                      <path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z"
+                        transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;">
+                      </path>
+                      <path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z"
+                        transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z"
+                        transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)"
+                        style="outline: none;">
+                        <path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53"
+                          transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1"
+                          style="outline: none;"></path>
+                      </g>
+                      <path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z"
+                        transform="translate(466 6895.793)" fill="none" style="outline: none;"></path>
+                      <g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)"
+                        style="outline: none;">
+                        <path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e"
+                          style="outline: none;"></path>
+                      </g>
+                      <g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)"
+                        style="outline: none;">
+                        <path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z"
+                          transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Pivot-/Pendeltür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Schiebetür">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)"
+                      style="outline: none;">
+                      <path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z"
+                        transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;">
+                      </path>
+                      <path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z"
+                        transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z"
+                        transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)"
+                        style="outline: none;">
+                        <path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53"
+                          transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1"
+                          style="outline: none;"></path>
+                      </g>
+                      <path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z"
+                        transform="translate(466 6895.793)" fill="none" style="outline: none;"></path>
+                      <g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)"
+                        style="outline: none;">
+                        <path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e"
+                          style="outline: none;"></path>
+                      </g>
+                      <g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)"
+                        style="outline: none;">
+                        <path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z"
+                          transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Schiebetür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Festelement">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)"
+                      style="outline: none;">
+                      <path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z"
+                        transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;">
+                      </path>
+                      <path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z"
+                        transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z"
+                        transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)"
+                        style="outline: none;">
+                        <path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53"
+                          transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1"
+                          style="outline: none;"></path>
+                      </g>
+                      <path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z"
+                        transform="translate(466 6895.793)" fill="none" style="outline: none;"></path>
+                      <g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)"
+                        style="outline: none;">
+                        <path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e"
+                          style="outline: none;"></path>
+                      </g>
+                      <g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)"
+                        style="outline: none;">
+                        <path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z"
+                          transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Festelement</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Anschlag</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice">
+              <p class="inquiry-tab__description">
+                Wählen Sie zwischen Dreh-, Pivot- / Pendel-, Schiebetür und Festteil. Bei der Drehtür handelt es sich um
+                eine Tür mit klassischem Scharnier welche Sie zu einer Seite 90° öffnen können. Die Pivot- bzw.
+                Pendeltür hingegen können Sie in beide Richtungen öffnen.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Anschlag links DIN Links" value="Anschlag links DIN Links">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)"
+                      style="outline: none;">
+                      <path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z"
+                        transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;">
+                      </path>
+                      <path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z"
+                        transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z"
+                        transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)"
+                        style="outline: none;">
+                        <path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53"
+                          transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1"
+                          style="outline: none;"></path>
+                      </g>
+                      <path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z"
+                        transform="translate(466 6895.793)" fill="none" style="outline: none;"></path>
+                      <g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)"
+                        style="outline: none;">
+                        <path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e"
+                          style="outline: none;"></path>
+                      </g>
+                      <g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)"
+                        style="outline: none;">
+                        <path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z"
+                          transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Anschlag links DIN Links</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Anschlag rechts DIN Rechts" value="Anschlag rechts DIN Rechts">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)"
+                      style="outline: none;">
+                      <path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z"
+                        transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;">
+                      </path>
+                      <path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z"
+                        transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z"
+                        transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path>
+                      <g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)"
+                        style="outline: none;">
+                        <path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53"
+                          transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1"
+                          style="outline: none;"></path>
+                      </g>
+                      <path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z"
+                        transform="translate(466 6895.793)" fill="none" style="outline: none;"></path>
+                      <g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)"
+                        style="outline: none;">
+                        <path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e"
+                          style="outline: none;"></path>
+                      </g>
+                      <g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)"
+                        style="outline: none;">
+                        <path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z"
+                          transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Anschlag rechts
+                    DIN Rechts</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Anbauelemente</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Sie können Ihre Loft-Tür durch ein oder zwei Seitenteile sowie ein Oberlicht ergänzen. Eine Doppeltür
+                ist ebenfalls möglich. Wählen Sie bitte entsprechende Optionen aus. Eine Kombination verschiedener
+                Element ist durch Mehrfachauswahl möglich.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Anbauelemente" value="Seitenelement links">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Seitenelement links</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Anbauelemente" value="Seitenelement rechts">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Seitenelement rechts</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Anbauelemente" value="Oberlicht">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Oberlicht</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Anbauelemente" value="Doppeltür">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Doppeltür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Sprossenaufteilung</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Sie können Ihre Loft-Tür durch ein oder zwei Seitenteile sowie ein Oberlicht ergänzen. Eine Doppeltür
+                ist ebenfalls möglich. Wählen Sie bitte entsprechende Optionen aus. Eine Kombination verschiedener
+                Element ist durch Mehrfachauswahl möglich.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Sprossenaufteilung" value="Polo 3">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Polo 3</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Sprossenaufteilung" value="Polo 3+">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Polo 3+</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Sprossenaufteilung" value="Polo 4">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Polo 4</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Sprossenaufteilung" value="o 4+">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">o 4+</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Sprossenaufteilung" value="Flexi">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Flexi</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Sprossenaufteilung" value="Flexi +">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Flexi +</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Sprossenaufteilung" value="Elo 1L">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Elo 1L</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Sprossenaufteilung" value="Elo 2L">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Elo 2L</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Sprossenaufteilung" value="Cross 1L">
+                <div class="inquiry-tab__image">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;">
+                      <style style="outline: none;">
+                        .dSL {
+                          stroke-width: 2.5px;
+                        }
+
+                        .dSL,
+                        .eSL,
+                        .fSL,
+                        .gSL {
+                          stroke: #efebe6;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .dSL,
+                        .fSL,
+                        .gSL {
+                          fill: none;
+                        }
+
+                        .eSL {
+                          fill: #efebe6;
+                          stroke-width: 2.13px;
+                        }
+
+                        .fSL {
+                          stroke-width: 1.06px;
+                        }
+
+                        .gSL {
+                          stroke-width: 1.86px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="a" style="outline: none;"></g>
+                    <g id="b" style="outline: none;">
+                      <g id="c" style="outline: none;">
+                        <g style="outline: none;">
+                          <path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z"
+                            style="outline: none;"></path>
+                          <line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line>
+                          <line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line>
+                          <line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line>
+                          <polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48"
+                            style="outline: none;"></polyline>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Cross 1L</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tabs__navigation">
+          <button type="button" class="inquiry-tabs__nav-button inquiry-tabs__nav-button--next" data-target="step2">
+            Weiter
+            <svg class="inquiry-tabs__nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="step2" class="inquiry-tabs__content">
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Farbe</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Unsere meist gelieferten Farben sind schwarz und anthrazit. Sie verleihen den Loft-Elementen den
+                charakteristischen Industrial-Look. Sollten Sie eine andere Farbe wünschen ist auch dies kein Problem.
+                Wir können unsere Elemente in fast allen RAL-Tönen liefern.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="color" value="Schwarz RAL 9005">
+                <div class="inquiry-tab__image">
+                  <div class="squarebox" style="
+                                           border: 1px solid #333333;
+                      background-color: #001316;
+                    "></div>
+                  <p class="inquiry-tab__choice-description">Schwarz RAL 9005</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="color" value="Anthrazit
+RAL 7021
+(Schwarzgrau)">
+                <div class="inquiry-tab__image">
+                  <div class="squarebox" style="
+                      border: 1px solid #333333;
+                      background-color: #0E191F;
+                    "></div>
+                  <p class="inquiry-tab__choice-description">Anthrazit
+                    RAL 7021
+                    (Schwarzgrau)</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="color" value="Weiß">
+                <div class="inquiry-tab__image">
+                  <div class="squarebox" style="
+                      border: 1px solid #333333;
+                      background-color: #ecece7;
+                    "></div>
+                  <p class="inquiry-tab__choice-description">RAL 9003</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Oberfläche</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Wir bieten unsere Elemente in zwei Oberflächenqualitäten an: Glatt und Feinstruktur.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Oberfläche" value="Glatt">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_oberflaeche-glatt_300.png"
+                    alt="Oberfläche mit glatter Lackierung" height="150" width="auto">
+                  <p class="inquiry-tab__choice-description">Glatt</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Oberfläche" value="Feinstruktur">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_oberflaeche-feinstruktur_300.jpg"
+                    alt="Oberfläche mit Feinstruktur" class="hoverZoomLink" height="150" width="auto">
+                  <p class="inquiry-tab__choice-description">Feinstruktur</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Verglasung</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Standardmäßig verwenden wir für unsere Verglasungen sechs Millimeter Verbundsicherheitsglas (VSG). In
+                unserem Angebot finden Sie aber auch eine große Auswahl an weiteren Glassorten wie z.B. eine
+                Sichtschutzverlasung.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Verglasung" value="Klarglas">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-transparent_300.jpg"
+                    alt="Verglasung mit Klarglas" class="hoverZoomLink" height="150" width="auto">
+                  <p class="inquiry-tab__choice-description">Klarglas</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Verglasung" value="Milchglas">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-milchglas_300.jpg"
+                    alt="Verglasung mit Milchglas" class="hoverZoomLink" height="150" width="auto">
+                  <p class="inquiry-tab__choice-description">Milchglas</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Verglasung" value="Antisol grau">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-antisolGrau_300.jpg"
+                    alt="Verglasung mit Antisol grau" class="hoverZoomLink" height="150" width="auto">
+                  <p class="inquiry-tab__choice-description">Antisol grau</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Verglasung" value="Antisol braun">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-antisolBraun_300.jpg"
+                    alt="Verglasung mit Antisol braun" class="hoverZoomLink" height="150" width="auto">
+                  <p class="inquiry-tab__choice-description">Antisol braun</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Verglasung" value="Visiosun">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-visiosun_300.jpg"
+                    alt="Verglasung mit Visiosun" class="hoverZoomLink" height="150" width="auto">
+                  <p class="inquiry-tab__choice-description">Visiosun</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tabs__navigation">
+          <button type="button" class="inquiry-tabs__nav-button inquiry-tabs__nav-button--prev" data-target="step2">
+            <svg class="inquiry-tabs__nav-icon inquiry-tabs__nav-icon--prev" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Zurück</button>
+          <button type="button" class="inquiry-tabs__nav-button inquiry-tabs__nav-button--next" data-target="step3">
+            Weiter
+            <svg class="inquiry-tabs__nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="step3" class="inquiry-tabs__content">
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Griffstangen & Drückergarnituren</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Griffstangen verleihen unseren Elementen einen modernen Loft-Charakter. Sie können sowohl die Länge als
+                auch die Position den der Tür bestimmen. So lassen sich zierliche unauffällige Griffe, oder auch bis zum
+                Fußboden reichende massiv wirkende Griffe realisieren, ganz nach Ihren Wünschen. Lediglich der
+                Schiebetürgriff Secret hat ein festes Maß. Die Farbe der Griffstange entspricht immer der gewählten
+                Rahmenfarbe.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Griffstangen & Drückergarnituren" value="Gracia">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-gracia_360x600.jpg"
+                    alt="Griffstange Gracia" class="hoverZoomLink" height="300" width="auto">
+                  <p class="inquiry-tab__choice-description">Gracia</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Griffstangen & Drückergarnituren" value="Estella">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-estella_360x600.jpg"
+                    alt="Griffstange Estella" class="hoverZoomLink" height="300" width="auto">
+                  <p class="inquiry-tab__choice-description">Estella</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Griffstangen & Drückergarnituren" value="Levem">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-levem_360x600.jpg"
+                    alt="Griffstange Levem" class="hoverZoomLink" height="300" width="auto">
+                  <p class="inquiry-tab__choice-description">Levem</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Griffstangen & Drückergarnituren" value="Loft">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-loft_360x600.jpg"
+                    alt="Griffstange Loft" class="hoverZoomLink" height="300" width="auto">
+                  <p class="inquiry-tab__choice-description">Loft</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Griffstangen & Drückergarnituren" value="Secret
+Nur Schiebetür">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-secret_360x600.jpg"
+                    alt="Griff Secret für Schiebetür" class="hoverZoomLink" height="300" width="auto">
+                  <p class="inquiry-tab__choice-description">Secret
+                    Nur Schiebetür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Als Alternative zu unseren Griffstangen können Sie für sämtliche Elemente auch klassische
+                Drückergarnituren wählen. Diese Lösung bietet sich vor allem für gemeinschaftlich genutzt Büroflächen
+                an. Neben dem klassischen Schließzylinder bieten wir auch eine WC-Garnitur an. Außerdem sind alle
+                Drücker auch ohne Schloss erhältlich.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Griffstangen & Drückergarnituren" value="Circo">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_druecker-circo_600.jpg"
+                    alt="Drückergarnitur Circo" class="hoverZoomLink" width="auto" height="170">
+                  <p class="inquiry-tab__choice-description">Circo</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Griffstangen & Drückergarnituren" value="Qubis">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_druecker-qubis_600.jpg"
+                    alt="Drückergarnitur Qubis" class="hoverZoomLink" width="auto" height="170">
+                  <p class="inquiry-tab__choice-description">Qubis</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Griffstangen & Drückergarnituren" value="Planus">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_druecker-planus_600.jpg"
+                    alt="Drückergarnitur Planus" class="hoverZoomLink" width="auto" height="170">
+                  <p class="inquiry-tab__choice-description">Planus</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="Griffstangen & Drückergarnituren" value="Trex">
+                <div class="inquiry-tab__image">
+                  <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_druecker-trex_600.jpg"
+                    alt="Drückergarnitur Trex" class="hoverZoomLink" width="auto" height="170">
+                  <p class="inquiry-tab__choice-description">Trex</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tabs__navigation">
+          <button type="button" class="inquiry-tabs__nav-button inquiry-tabs__nav-button--prev" data-target="step3">
+            <svg class="inquiry-tabs__nav-icon inquiry-tabs__nav-icon--prev" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Zurück
+          </button>
+          <button type="button" class="inquiry-tabs__nav-button inquiry-tabs__nav-button--next" data-target="step4">
+            Weiter
+            <svg class="inquiry-tabs__nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="step4" class="inquiry-tabs__content">
+        <form class="lofty-product-form">
+          <div class="lofty-product-form__grid">
+            <div>
+              <section class="lofty-product-form__section">
+                <h2 class="lofty-product-form__title">Maße</h2>
+                <div class="lofty-product-form__measures">
+                  <div class="lofty-product-form__measures-diagram">
+                  </div>
+                  <div class="lofty-product-form__measures-input">
+                    <div>
+                      <p>
+                        Um Ihnen ein Angebot erstellen zu können benötigen wir die Maße der Wandöffnung. Dazu messen Sie
+                        bitte die Breite sowie Höhe der Wandöffnung.
+                      </p>
+                    </div>
+                    <div class="lofty-product-form__input-group">
+                      <label for="width">Breite</label>
+                      <input type="number" id="width" class="lofty-product-form__input" placeholder="100 mm">
+
+                      <label for="height">Höhe</label>
+                      <input type="number" id="height" class="lofty-product-form__input" placeholder="100 mm">
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="lofty-product-form__section">
+                <h2 class="lofty-product-form__title">Montage</h2>
+                <p>
+                  Falls Sie eine Montage wünschen, erstellen wir Ihnen hierüber gerne ein Angebot. Sollten Sie keine
+                  Montage wünschen bieten wir Ihnen die Elemente mit Versandkosten an.
+                </p>
+                <label>
+                  <input type="checkbox" id="assembly">
+                  Montage erwünscht?
+                </label>
+              </section>
+            </div>
+
+            <div>
+              <section class="lofty-product-form__section">
+                <h2 class="lofty-product-form__title">Ihre Notizen</h2>
+                <p>
+                  Sollte Ihr gewünschtes Produkt über die verfügbaren Optionen hinausgehen, schreiben Sie uns gerne eine
+                  Nachricht. Gemeinsam finden wir eine Lösung für Ihr Wunsch-Loft-Element.
+                </p>
+                <textarea class="lofty-product-form__textarea" placeholder="Ihre Nachricht an uns"></textarea>
+              </section>
+
+              <section class="lofty-product-form__section">
+                <h2 class="lofty-product-form__title">Datei-Upload</h2>
+                <p>
+                  Senden Sie uns gerne eine Skizze oder Fotos Ihre Bauvorhaben. Sie können dazu folgendes Upload-Tool
+                  verwenden.
+                </p>
+                <div class="lofty-product-form__upload">
+                  <svg class="lofty-product-form__upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                  <p class="lofty-product-form__upload-text">Zur Dateiauswahl klicken</p>
+                  <p class="lofty-product-form__upload-info">max. 5 Dateien, max. 8 MB</p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </form>
+
+        <div class="inquiry-tabs__navigation">
+          <button type="button" class="inquiry-tabs__nav-button inquiry-tabs__nav-button--prev" data-target="step4">
+            <svg class="inquiry-tabs__nav-icon inquiry-tabs__nav-icon--prev" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Zurück</button>
+          <button type="button" class="inquiry-tabs__nav-button inquiry-tabs__nav-button--next" data-target="step5">
+            Weiter
+            <svg class="inquiry-tabs__nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="step5" class="inquiry-tabs__content">
+        <div class="kontaktdaten">
+          <div class="kontaktdaten__image-container">
+            <img src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_lofttuer-1.jpg" alt="Loft Tür"
+              class="kontaktdaten__image">
+          </div>
+          <div class="kontaktdaten__form-container">
+            <h2 class="kontaktdaten__title">Kontaktdaten</h2>
+            <p class="kontaktdaten__description">
+              Bitte nennen Sie uns noch Ihre Kontaktdaten unter denen wir Sie erreichen können. Wir versenden unser
+              Angebot per Email. Sollten wir wichtige Rückfragen haben, melden wir uns ggfs. auch telefonisch bei Ihnen.
+            </p>
+            <form class="kontaktdaten__form">
+              <div class="kontaktdaten__form-row">
+                <div class="kontaktdaten__form-group">
+                  <label for="vorname-name" class="kontaktdaten__label">First name, surname</label>
+                  <input type="text" id="vorname-name" class="kontaktdaten__input" placeholder="Max Mustermann">
+                </div>
+                <div class="kontaktdaten__form-group">
+                  <label for="email" class="kontaktdaten__label">Email</label>
+                  <input type="email" id="email" class="kontaktdaten__input" placeholder="max@mustermann.de">
+                </div>
+              </div>
+              <div class="kontaktdaten__form-row">
+                <div class="kontaktdaten__form-group">
+                  <label for="strasse-nr" class="kontaktdaten__label">Street, No.</label>
+                  <input type="text" id="strasse-nr" class="kontaktdaten__input" placeholder="Musterstraße 1">
+                </div>
+                <div class="kontaktdaten__form-group">
+                  <label for="telefon" class="kontaktdaten__label">Telephone</label>
+                  <input type="tel" id="telefon" class="kontaktdaten__input" placeholder="017111222333">
+                </div>
+              </div>
+              <div class="kontaktdaten__form-row">
+                <div class="kontaktdaten__form-group kontaktdaten__form-group--plz">
+                  <label for="plz" class="kontaktdaten__label">Zip code</label>
+                  <input type="text" id="plz" class="kontaktdaten__input" placeholder="12345">
+                </div>
+                <div class="kontaktdaten__form-group kontaktdaten__form-group--stadt">
+                  <label for="stadt" class="kontaktdaten__label">City</label>
+                  <input type="text" id="stadt" class="kontaktdaten__input" placeholder="Musterstadt">
+                </div>
+              </div>
+            </form>
+            <p class="kontaktdaten__privacy-notice">
+              Ihre Formulareingaben werden ausschließlich zur Kontaktaufnahme bzw. zur Bearbeitung Ihres Anliegens
+              gespeichert. Mit Absenden des Formulars bestätigen Sie, dass Sie unsere Datenschutzerklärung zur Kenntnis
+              genommen und akzeptiert haben.
+            </p>
+          </div>
+        </div>
+        <div class="inquiry-tabs__navigation">
+          <button type="button" class="inquiry-tabs__nav-button inquiry-tabs__nav-button--prev" data-target="step5">
+            <svg class="inquiry-tabs__nav-icon inquiry-tabs__nav-icon--prev" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Zurück</button>
+          <button type="button" class="inquiry-tabs__nav-button inquiry-tabs__nav-button--next" data-target="step6">
+
+            Absenden
+            <svg class="inquiry-tabs__nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<script>
+  // select user selections -------------------------
+  
+  const inquiryTabs = document.querySelectorAll('.inquiry-tabs__nav-item');
+  const contents = document.querySelectorAll('.inquiry-tabs__content');
+
+  inquiryTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      inquiryTabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+      const target = tab.getAttribute('data-target');
+      contents.forEach((content) => {
+        if (content.id === target) {
+          content.classList.add('active');
+        } else {
+          content.classList.remove('active');
+        }
+      });
+      updateUnderline();
+    });
+  });
+
+
+  // animate border nav -------------------------
+  const navItems = document.querySelectorAll('.inquiry-tabs__nav-item');
+
+  navItems.forEach(item => {
+    item.addEventListener('click', function () {
+      // Remove active class from all items
+      navItems.forEach(navItem => navItem.classList.remove('active'));
+
+      // Add active class to clicked item
+      this.classList.add('active');
+
+      // Your existing code to show the corresponding tab content
+      const targetId = this.getAttribute('data-target');
+      showTab(targetId);
+    });
+  });
+
+  function showTab(tabId) {
+    // Hide all tab contents
+    document.querySelectorAll('.inquiry-tabs__content').forEach(content => {
+      content.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    const selectedTab = document.getElementById(tabId);
+    if (selectedTab) {
+      selectedTab.classList.add('active');
+    }
+  }
+
+  // next and prev -------------------------
+  document.addEventListener('DOMContentLoaded', function () {
+    const navItems = document.querySelectorAll('.inquiry-tabs__nav-item');
+    const contents = document.querySelectorAll('.inquiry-tabs__content');
+    const nextButtons = document.querySelectorAll('.inquiry-tabs__nav-button--next');
+    const prevButtons = document.querySelectorAll('.inquiry-tabs__nav-button--prev');
+
+    function showTab(tabId) {
+      contents.forEach(content => {
+        content.classList.remove('active');
+      });
+
+      const selectedTab = document.getElementById(tabId);
+      if (selectedTab) {
+        selectedTab.classList.add('active');
+      }
+
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('data-target') === tabId) {
+          item.classList.add('active');
+        }
+      });
+    }
+
+    navItems.forEach(item => {
+      item.addEventListener('click', function () {
+        const targetId = this.getAttribute('data-target');
+        showTab(targetId);
+      });
+    });
+
+    nextButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const currentTab = button.closest('.inquiry-tabs__content');
+        const currentIndex = Array.from(contents).indexOf(currentTab);
+        if (currentIndex < contents.length - 1) {
+          showTab(contents[currentIndex + 1].id);
+        } else if (button.textContent.trim() === 'Absenden') {
+          // Handle form submission here
+          console.log('Form submitted');
+          // You can add your form submission logic here
+          console.log(dataStep1, dataStep2, dataStep3, dataStep4, dataStep5);
+        }
+      });
+    });
+
+    prevButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const currentTab = button.closest('.inquiry-tabs__content');
+        const currentIndex = Array.from(contents).indexOf(currentTab);
+        if (currentIndex > 0) {
+          showTab(contents[currentIndex - 1].id);
+        }
+      });
+    });
+
+    // Initialize the first tab as active
+    showTab(contents[0].id);
+  });
+
+  // save all tabs data value in data object so we can save it in sever -------------------------
+  
+ let dataStep1 = {};
+ let dataStep2 = {};
+ let dataStep3 = {};
+ let dataStep4 = {};
+ let dataStep5 = {};
+
+
+ // 2 Then, we'll create a function to update these objects when a selection is made:
+
+ function updateStepData(stepNumber, key, value) {
+  switch(stepNumber) {
+    case 1:
+      dataStep1[key] = value;
+      break;
+    case 2:
+      dataStep2[key] = value;
+      break;
+    case 3:
+      dataStep3[key] = value;
+      break;
+    case 4:
+      dataStep4[key] = value;
+      break;
+    case 5:
+      dataStep5[key] = value;
+      break;
+  }
+}
+
+// 3 . Now, we'll add event listeners to capture selections:
+
+document.addEventListener('DOMContentLoaded', function() {
+  // ... (existing code) ...
+
+  // Add event listeners for radio buttons and checkboxes
+  document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(input => {
+    input.addEventListener('change', function() {
+      const stepNumber = parseInt(this.closest('.inquiry-tabs__content').id.replace('step', ''));
+      const key = this.name;
+      const value = this.type === 'checkbox' ? this.checked : this.value;
+      updateStepData(stepNumber, key, value);
+    });
+  });
+
+  // Add event listeners for text inputs and textareas
+  document.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea').forEach(input => {
+    input.addEventListener('blur', function() {
+      const stepNumber = parseInt(this.closest('.inquiry-tabs__content').id.replace('step', ''));
+      const key = this.id;
+      const value = this.value;
+      updateStepData(stepNumber, key, value);
+    });
+  });
+
+  // 4- Finally, let's modify the "Absenden" button click handler to log all the collected data:
+
+  nextButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const currentTab = button.closest('.inquiry-tabs__content');
+    const currentIndex = Array.from(contents).indexOf(currentTab);
+    if (currentIndex < contents.length - 1) {
+      showTab(contents[currentIndex + 1].id);
+    } else if (button.textContent.trim() === 'Absenden') {
+      // Log all collected data
+      console.log('Step 1 Data:', dataStep1);
+      console.log('Step 2 Data:', dataStep2);
+      console.log('Step 3 Data:', dataStep3);
+      console.log('Step 4 Data:', dataStep4);
+      console.log('Step 5 Data:', dataStep5);
+      console.log("-------------")
+      // Here you can add code to send this data to your server
+    }
+  });
+});
+
+});
+
+
+</script>
