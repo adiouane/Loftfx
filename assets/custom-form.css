@@ -4,13 +4,17 @@
   align-content: center;
   flex-wrap: wrap;
   padding-top: 4rem;
+  
 }
-.product-inquiry > div {
+
+.product-inquiry>div {
   width: 50%;
 }
+
 .product-inquiry__image-container {
   text-align: center;
 }
+
 .product-inquiry__title {
   font-size: 60px;
   font-weight: 400;
@@ -27,22 +31,27 @@
   margin-bottom: 15px;
   margin-top: 0;
 }
+
 /* ------------- product inquiry form ---------- */
 #inquiry-form {
   padding: 5rem 6rem;
 }
+
 .inquiry-tabs {
   margin-top: 10rem;
 }
+
 .inquiry-tabs__nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
+
 .inquiry-tabs__content {
   display: none;
 }
+
 .inquiry-tabs__content.active {
   display: block;
 }
@@ -80,14 +89,17 @@
   justify-content: center;
   align-items: center;
 }
+
 .inquiry-tab__choice:has(p.inquiry-tab__description) {
   width: 100%;
   flex: auto;
   align-self: baseline;
 }
+
 .inquiry-tab__choice svg {
   width: 240px;
 }
+
 .inquiry-tab__choice.door svg {
   width: auto;
   height: 200px;
@@ -98,6 +110,7 @@
   padding: 0;
   margin: 0;
 }
+
 .inquiry-tab__image {
   opacity: 0.8;
   cursor: pointer;
@@ -114,6 +127,7 @@
   -o-transition: all;
   border: 1.5px solid transparent;
 }
+
 /* .inquiry-tab__image img{
   width: auto;
   height: 150px;
@@ -123,6 +137,7 @@
   height: 140px;
   overflow: hidden;
 }
+
 .inquiry-tab__image:hover {
   border: 1.5px solid;
 }
@@ -131,11 +146,11 @@
   opacity: 1;
 }
 
-.inquiry-tab__radio-img > input {
+.inquiry-tab__radio-img>input {
   display: none;
 }
 
-.inquiry-tab__radio-img > input:checked + .inquiry-tab__image {
+.inquiry-tab__radio-img>input:checked+.inquiry-tab__image {
   border: 1.5px solid;
 }
 
@@ -156,9 +171,11 @@
   letter-spacing: 0.2px;
   line-height: 1.5em;
 }
+
 .inquiry-tabs__nav-item span.text {
   display: block;
 }
+
 .inquiry-tabs__nav-item span.number {
   display: none;
 }
@@ -167,22 +184,28 @@
   .product-inquiry {
     gap: 3rem;
   }
+
   #inquiry-form {
     padding: 5rem 0;
   }
-  .product-inquiry > div {
+
+  .product-inquiry>div {
     width: 100%;
   }
+
   .inquiry-tab__image {
     padding: 3rem 10px;
   }
+
   .inquiry-tab__choice svg {
     width: 130px;
   }
+
   .product-inquiry__title {
     font-size: 32px;
     line-height: 1.25em;
   }
+
   .inquiry-tab__title {
     font-size: 36px;
     line-height: 42px;
@@ -191,6 +214,7 @@
   .inquiry-tabs__nav-item span.text {
     display: none;
   }
+
   .inquiry-tabs__nav-item span.number {
     display: block;
   }
@@ -199,8 +223,140 @@
     width: auto;
     height: 125px;
   }
+
   .inquiry-tab__image .squarebox {
     width: 130px;
     height: 130px;
+  }
+}
+
+
+.loft-product-inquiry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #efebe6;
+  background-color: #1c1c1c;
+}
+
+.loft-product-inquiry__section {
+  margin-bottom: 2rem;
+}
+
+.loft-product-inquiry__heading {
+  font-size: 1.5rem;
+  color: #c9a77c;
+  margin-bottom: 1rem;
+}
+
+.loft-product-inquiry__description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.loft-product-inquiry__dimensions {
+  display: flex;
+  gap: 2rem;
+}
+
+.loft-product-inquiry__diagram {
+  flex: 1;
+  /* Add SVG styles here */
+}
+
+.loft-product-inquiry__dimension-inputs {
+  flex: 1;
+}
+
+.loft-product-inquiry__input-group {
+  margin-bottom: 1rem;
+}
+
+.loft-product-inquiry__label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.loft-product-inquiry__input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #efebe6;
+  border-radius: 4px;
+}
+
+.loft-product-inquiry__input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  color: #1c1c1c;
+}
+
+.loft-product-inquiry__input-unit {
+  padding: 0.5rem;
+  color: #1c1c1c;
+}
+
+.loft-product-inquiry__checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.loft-product-inquiry__checkbox {
+  margin-right: 0.5rem;
+}
+
+.loft-product-inquiry__textarea {
+  width: 100%;
+  height: 150px;
+  padding: 0.5rem;
+  background-color: #efebe6;
+  border: none;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.loft-product-inquiry__upload-area {
+  border: 2px dashed #c9a77c;
+  border-radius: 4px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.loft-product-inquiry__file-input {
+  display: none;
+}
+
+.loft-product-inquiry__upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.loft-product-inquiry__upload-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  fill: #c9a77c;
+}
+
+.loft-product-inquiry__upload-info {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .loft-product-inquiry {
+    grid-template-columns: 1fr;
+  }
+
+  .loft-product-inquiry__dimensions {
+    flex-direction: column;
   }
 }
