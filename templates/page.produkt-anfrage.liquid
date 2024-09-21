@@ -1,0 +1,847 @@
+<div class="page-width">
+  <div class="product-inquiry">
+    <div class="product-inquiry__content">
+      <h1 class="product-inquiry__title">Produktanfrage</h1>
+      <p class="product-inquiry__text">Sie interessieren sich für unsere Stahl-Loft-Türen?</p>
+      <p class="product-inquiry__text">
+        Jedes Element wird individuell auf Ihren Wunsch angefertigt. Gerne gestalten wir mit Ihnen zusammen Ihre
+        individuelle Stahl-Loft-Tür.
+      </p>
+      <p class="product-inquiry__text">
+        Damit wir mit Ihnen gemeinsam ein Projekt realisieren können, benötigen wir im Vorfeld einige Informationen zu
+        Ihrem gewünschten Element. Füllen Sie bitte dazu das folgende Formular aus. Die Anfrage ist unverbindlich und
+        kostenlos. Wir werden uns schnellstmöglich mit einem individuellen Angebot bei Ihnen melden.
+      </p>
+    </div>
+    <div class="product-inquiry__image-container">
+      <img
+        src="{{ 'loftfx-blueprint-tuer-produktanfrage_bg.jpg' | asset_url }}"
+        alt="Produktanfrage Diagram"
+        class="product-inquiry__image"
+        width="274"
+        height="420"
+      >
+    </div>
+  </div>
+</div>
+
+{% comment %} product inquiry form {% endcomment %}
+<div class="page-width">
+  <div class="inquiry-tabs">
+    <div class="inquiry-tabs__nav">
+      <button class="inquiry-tabs__nav-item active" data-target="step1">
+        <span class="text">Elementtyp</span><span class="number">1</span>
+      </button>
+      <button class="inquiry-tabs__nav-item" data-target="step2">
+        <span class="text">Farbe & Verglasung</span><span class="number">2</span>
+      </button>
+      <button class="inquiry-tabs__nav-item" data-target="step3">
+        <span class="text">Griffe</span><span class="number">3</span>
+      </button>
+      <button class="inquiry-tabs__nav-item" data-target="step4">
+        <span class="text">Maße & Skizze</span><span class="number">4</span>
+      </button>
+      <button class="inquiry-tabs__nav-item" data-target="step5">
+        <span class="text">Kontakt</span><span class="number">5</span>
+      </button>
+    </div>
+
+    <form id="inquiry-form" class="inquiry-form">
+      <div id="step1" class="inquiry-tabs__content active">
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Elementtyp</h3>
+          <p class="inquiry-tab__description">
+            Wählen Sie zwischen Dreh-, Pivot- / Pendel-, Schiebetür und Festteil. Bei der Drehtür handelt es sich um
+            eine Tür mit klassischem Scharnier welche Sie zu einer Seite 90° öffnen können. Die Pivot- bzw. Pendeltür
+            hingegen können Sie in beide Richtungen öffnen.
+          </p>
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)" style="outline: none;"><path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z" transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;"></path><path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z" transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z" transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)" style="outline: none;"><path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53" transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1" style="outline: none;"></path></g><path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z" transform="translate(466 6895.793)" fill="none" style="outline: none;"></path><g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)" style="outline: none;"><path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e" style="outline: none;"></path></g><g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)" style="outline: none;"><path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z" transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="ggg">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)" style="outline: none;"><path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z" transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;"></path><path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z" transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z" transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)" style="outline: none;"><path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53" transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1" style="outline: none;"></path></g><path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z" transform="translate(466 6895.793)" fill="none" style="outline: none;"></path><g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)" style="outline: none;"><path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e" style="outline: none;"></path></g><g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)" style="outline: none;"><path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z" transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="af">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)" style="outline: none;"><path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z" transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;"></path><path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z" transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z" transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)" style="outline: none;"><path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53" transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1" style="outline: none;"></path></g><path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z" transform="translate(466 6895.793)" fill="none" style="outline: none;"></path><g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)" style="outline: none;"><path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e" style="outline: none;"></path></g><g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)" style="outline: none;"><path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z" transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="DreFFFhtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)" style="outline: none;"><path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z" transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;"></path><path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z" transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z" transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)" style="outline: none;"><path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53" transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1" style="outline: none;"></path></g><path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z" transform="translate(466 6895.793)" fill="none" style="outline: none;"></path><g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)" style="outline: none;"><path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e" style="outline: none;"></path></g><g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)" style="outline: none;"><path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z" transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Elementtyp</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice">
+              <p class="inquiry-tab__description">
+                Wählen Sie zwischen Dreh-, Pivot- / Pendel-, Schiebetür und Festteil. Bei der Drehtür handelt es sich um
+                eine Tür mit klassischem Scharnier welche Sie zu einer Seite 90° öffnen können. Die Pivot- bzw.
+                Pendeltür hingegen können Sie in beide Richtungen öffnen.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)" style="outline: none;"><path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z" transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;"></path><path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z" transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z" transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)" style="outline: none;"><path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53" transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1" style="outline: none;"></path></g><path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z" transform="translate(466 6895.793)" fill="none" style="outline: none;"></path><g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)" style="outline: none;"><path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e" style="outline: none;"></path></g><g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)" style="outline: none;"><path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z" transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="ggg">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53.792" class="" style="outline: none;">
+                    <g id="Gruppe_10964" data-name="Gruppe 10964" transform="translate(-466 -6861.145)" style="outline: none;"><path id="Pfad_3129" data-name="Pfad 3129" d="M150.316-22.9H49.036v-5.715h101.28Z" transform="translate(490.265 6898.777)" fill="#e3ae7e" opacity="0.299" style="outline: none;"></path><path id="Pfad_3130" data-name="Pfad 3130" d="M0-10.213H68.965V-34.647H0Z" transform="translate(466 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><path id="Pfad_3131" data-name="Pfad 3131" d="M117.581-10.213h64.236V-34.647H117.581Z" transform="translate(524.182 6895.792)" fill="#3c4041" class="" style="outline: none;"></path><g id="Gruppe_10839" data-name="Gruppe 10839" transform="translate(632.277 6878.382)" style="outline: none;"><path id="Pfad_3132" data-name="Pfad 3132" d="M1.416,0A68.555,68.555,0,0,1-2.862,22.53" transform="translate(2.862)" fill="none" stroke="#e3ae7e" stroke-width="1" style="outline: none;"></path></g><path id="Pfad_3133" data-name="Pfad 3133" d="M0,17.144H240v-51.79H0Z" transform="translate(466 6895.793)" fill="none" style="outline: none;"></path><g id="Gruppe_10841" data-name="Gruppe 10841" transform="translate(630.038 6899.24)" style="outline: none;"><path id="Pfad_3134" data-name="Pfad 3134" d="M0,0,.83,5.15,4.876,1.857Z" fill="#e3ae7e" style="outline: none;"></path></g><g id="Gruppe_10842" data-name="Gruppe 10842" transform="translate(538.832 6869.148)" style="outline: none;"><path id="Pfad_3135" data-name="Pfad 3135" d="M0,1.733,92.808,42.285,95.1,37.049,2.287-3.5Z" transform="translate(0 3.503)" fill="#e3ae7e" class="" style="outline: none;"></path></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Anbauelemente</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Sie können Ihre Loft-Tür durch ein oder zwei Seitenteile sowie ein Oberlicht ergänzen. Eine Doppeltür
+                ist ebenfalls möglich. Wählen Sie bitte entsprechende Optionen aus. Eine Kombination verschiedener
+                Element ist durch Mehrfachauswahl möglich.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Anbauelemente</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Sie können Ihre Loft-Tür durch ein oder zwei Seitenteile sowie ein Oberlicht ergänzen. Eine Doppeltür
+                ist ebenfalls möglich. Wählen Sie bitte entsprechende Optionen aus. Eine Kombination verschiedener
+                Element ist durch Mehrfachauswahl möglich.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.05 201.86" style="outline: none;">
+                    <defs style="outline: none;"><style style="outline: none;">.dSL{stroke-width:2.5px;}.dSL,.eSL,.fSL,.gSL{stroke:#efebe6;stroke-miterlimit:10;}.dSL,.fSL,.gSL{fill:none;}.eSL{fill:#efebe6;stroke-width:2.13px;}.fSL{stroke-width:1.06px;}.gSL{stroke-width:1.86px;}</style></defs><g id="a" style="outline: none;"></g><g id="b" style="outline: none;"><g id="c" style="outline: none;"><g style="outline: none;"><path class="gSL" d="M121.12,200.93H41.12V.93H121.12V200.93ZM40.93,.93H.93V200.93H40.93V.93Z" style="outline: none;"></path><line class="fSL" x1=".93" y1="67.6" x2="120.93" y2="67.6" style="outline: none;"></line><line class="fSL" x1=".93" y1="134.26" x2="120.93" y2="134.26" style="outline: none;"></line><line class="dSL" x1="40.93" y1=".93" x2="40.93" y2="200.93" style="outline: none;"></line><polyline class="eSL" points="41.95 85.38 44.92 85.38 44.92 116.48 41.95 116.48" style="outline: none;"></polyline></g></g></g>
+                  </svg>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="step2" class="inquiry-tabs__content">
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Farbe</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Unsere meist gelieferten Farben sind schwarz und anthrazit. Sie verleihen den Loft-Elementen den
+                charakteristischen Industrial-Look. Sollten Sie eine andere Farbe wünschen ist auch dies kein Problem.
+                Wir können unsere Elemente in fast allen RAL-Tönen liefern.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="color" value="ff">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <div
+                    class="squarebox"
+                    style="
+                                           border: 1px solid #333333;
+                      background-color: #001316;
+                    "
+                  ></div>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="color" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <div
+                    class="squarebox"
+                    style="
+                      border: 1px solid #333333;
+                      background-color: #0E191F;
+                    "
+                  ></div>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="color" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <div
+                    class="squarebox"
+                    style="
+                      border: 1px solid #333333;
+                      background-color: #ecece7;
+                    "
+                  ></div>
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Oberfläche</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Wir bieten unsere Elemente in zwei Oberflächenqualitäten an: Glatt und Feinstruktur.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="surface" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_oberflaeche-glatt_300.png"
+                    alt="Oberfläche mit glatter Lackierung"
+                    height="150"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="surface" value="Drehtür"> 
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_oberflaeche-feinstruktur_300.jpg"
+                    alt="Oberfläche mit Feinstruktur"
+                    class="hoverZoomLink"
+                    height="150"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Verglasung</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Standardmäßig verwenden wir für unsere Verglasungen sechs Millimeter Verbundsicherheitsglas (VSG). In
+                unserem Angebot finden Sie aber auch eine große Auswahl an weiteren Glassorten wie z.B. eine
+                Sichtschutzverlasung.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-transparent_300.jpg"
+                    alt="Verglasung mit Klarglas"
+                    class="hoverZoomLink"
+                    height="150"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-milchglas_300.jpg"
+                    alt="Verglasung mit Milchglas"
+                    class="hoverZoomLink"
+                    height="150"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-antisolGrau_300.jpg"
+                    alt="Verglasung mit Antisol grau"
+                    class="hoverZoomLink"
+                    height="150"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-antisolBraun_300.jpg"
+                    alt="Verglasung mit Antisol braun"
+                    class="hoverZoomLink"
+                    height="150"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_verglasung-visiosun_300.jpg"
+                    alt="Verglasung mit Visiosun"
+                    class="hoverZoomLink"
+                    height="150"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="step3" class="inquiry-tabs__content">
+        <div class="inquiry-tab__choice-container">
+          <h3 class="inquiry-tab__title">Griffstangen & Drückergarnituren</h3>
+
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Griffstangen verleihen unseren Elementen einen modernen Loft-Charakter. Sie können sowohl die Länge als
+                auch die Position den der Tür bestimmen. So lassen sich zierliche unauffällige Griffe, oder auch bis zum
+                Fußboden reichende massiv wirkende Griffe realisieren, ganz nach Ihren Wünschen. Lediglich der
+                Schiebetürgriff Secret hat ein festes Maß. Die Farbe der Griffstange entspricht immer der gewählten
+                Rahmenfarbe.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="farbe" value="s">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-gracia_360x600.jpg"
+                    alt="Griffstange Gracia"
+                    class="hoverZoomLink"
+                    height="300"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="farbe" value="Drehtffür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-estella_360x600.jpg"
+                    alt="Griffstange Estella"
+                    class="hoverZoomLink"
+                    height="300"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="farbe" value="Dresfhtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-levem_360x600.jpg"
+                    alt="Griffstange Levem"
+                    class="hoverZoomLink"
+                    height="300"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="farbe" value="Drehsftür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-loft_360x600.jpg"
+                    alt="Griffstange Loft"
+                    class="hoverZoomLink"
+                    height="300"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="farbe" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_griffstangen-secret_360x600.jpg"
+                    alt="Griff Secret für Schiebetür"
+                    class="hoverZoomLink"
+                    height="300"
+                    width="auto"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inquiry-tab__choice-container">
+          <ul class="inquiry-tab__choices">
+            <li class="inquiry-tab__choice door">
+              <p class="inquiry-tab__description">
+                Als Alternative zu unseren Griffstangen können Sie für sämtliche Elemente auch klassische
+                Drückergarnituren wählen. Diese Lösung bietet sich vor allem für gemeinschaftlich genutzt Büroflächen
+                an. Neben dem klassischen Schließzylinder bieten wir auch eine WC-Garnitur an. Außerdem sind alle
+                Drücker auch ohne Schloss erhältlich.
+              </p>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="af" value="afaf">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_druecker-circo_600.jpg"
+                    alt="Drückergarnitur Circo"
+                    class="hoverZoomLink"
+                    width="auto"
+                    height="170"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_druecker-qubis_600.jpg"
+                    alt="Drückergarnitur Qubis"
+                    class="hoverZoomLink"
+                     width="auto"
+                    height="170"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_druecker-planus_600.jpg"
+                    alt="Drückergarnitur Planus"
+                    class="hoverZoomLink"
+                     width="auto"
+                    height="170"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            <li class="inquiry-tab__choice door">
+              <label class="inquiry-tab__radio-img">
+                <input type="radio" name="elementType" value="Drehtür">
+                <div
+                  class="inquiry-tab__image"
+                >
+                  <img
+                    src="https://www.loftfx.de/wp-content/themes/loftfx/img/loftfx_druecker-trex_600.jpg"
+                    alt="Drückergarnitur Trex"
+                    class="hoverZoomLink"
+                     width="auto"
+                    height="170"
+                  >
+                  <p class="inquiry-tab__choice-description">Drehtür</p>
+                </div>
+              </label>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+
+      <div id="step4" class="inquiry-tabs__content">
+        <div class="product-inquiry">
+  <div class="product-inquiry__section product-inquiry__section--dimensions">
+    <h2 class="product-inquiry__heading">Maße</h2>
+    <div class="product-inquiry__dimensions">
+      <div class="product-inquiry__diagram">
+        <!-- SVG diagram here -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.48 318.1"><defs><style>.k{stroke:#e3af7f;stroke-width:2px;}.k,.l{fill:none;}.l{stroke:#efebe6;}</style></defs><g id="a"></g><g id="b"><g id="c"><path id="d" class="k" d="M1,317.1H182.48V1H1V317.1Z"></path><path id="e" class="l" d="M3.53,159.05H180.21"></path><path id="f" class="l" d="M10.93,165.93l-7.4-6.88,7.4-6.88"></path><path id="g" class="l" d="M172.81,152.16l7.4,6.88-7.4,6.88"></path><path id="h" class="l" d="M91.74,3.29V314.69"></path><path id="i" class="l" d="M98.62,307.29l-6.88,7.4-6.88-7.4"></path><path id="j" class="l" d="M84.86,10.69l6.88-7.4,6.88,7.4"></path></g></g></svg>
+      </div>
+      <div class="product-inquiry__dimension-inputs">
+        <p class="product-inquiry__description">
+          Um Ihnen ein Angebot erstellen zu können benötigen wir die Maße der Wandöffnung. Dazu messen Sie bitte die Breite sowie Höhe der Wandöffnung.
+        </p>
+        <div class="product-inquiry__input-group">
+          <label for="width" class="product-inquiry__label">Breite</label>
+          <div class="product-inquiry__input-wrapper">
+            <input type="number" id="width" class="product-inquiry__input" placeholder="100">
+            <span class="product-inquiry__input-unit">mm</span>
+          </div>
+        </div>
+        <div class="product-inquiry__input-group">
+          <label for="height" class="product-inquiry__label">Höhe</label>
+          <div class="product-inquiry__input-wrapper">
+            <input type="number" id="height" class="product-inquiry__input" placeholder="100">
+            <span class="product-inquiry__input-unit">mm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="product-inquiry__section product-inquiry__section--notes">
+    <h2 class="product-inquiry__heading">Ihre Notizen</h2>
+    <p class="product-inquiry__description">
+      Sollte ihr gewünschtes Produkt über die verfügbaren Optionen hinausgehen, schreiben Sie uns gerne eine Nachricht. Gemeinsam finden wir eine Lösung für Ihr Wunsch-Loft-Element.
+    </p>
+    <textarea class="product-inquiry__textarea" placeholder="Ihre Nachricht ans uns"></textarea>
+  </div>
+
+
+  <div class="product-inquiry__section product-inquiry__section--assembly">
+    <h2 class="product-inquiry__heading">Montage</h2>
+    <p class="product-inquiry__description">
+      Falls Sie eine Montage wünschen, erstellen wir Ihnen hierfür gerne ein Angebot. Sollten Sie keine Montage wünschen bieten wir Ihnen die Elemente mit Versandkosten an.
+    </p>
+    <div class="product-inquiry__checkbox-group">
+      <input type="checkbox" id="assembly" class="product-inquiry__checkbox">
+      <label for="assembly" class="product-inquiry__checkbox-label">Montage erwünscht?</label>
+    </div>
+  </div>
+
+  <div class="product-inquiry__section product-inquiry__section--upload">
+    <h2 class="product-inquiry__heading">Datei-Upload</h2>
+    <p class="product-inquiry__description">
+      Senden Sie uns gerne eine Skizze oder Fotos Ihre Bauvorhabens. Sie können dazu folgendes Upload-Tool verwenden.
+    </p>
+    <div class="product-inquiry__upload-area">
+      <input type="file" id="file-upload" class="product-inquiry__file-input" multiple>
+      <label for="file-upload" class="product-inquiry__upload-label">
+        <svg class="product-inquiry__upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <!-- SVG path for upload icon -->
+        </svg>
+        Zur Dateiauswahl klicken
+      </label>
+      <p class="product-inquiry__upload-info">max. 5 Dateien, max. 8 MB</p>
+    </div>
+  </div>
+</div>
+      </div>
+
+      <div id="step5" class="inquiry-tabs__content">
+        <h1>Step 5: Final Details</h1>
+        <label for="additional-info">Additional Information:</label>
+        <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  const inquiryTabs = document.querySelectorAll('.inquiry-tabs__nav-item');
+  const contents = document.querySelectorAll('.inquiry-tabs__content');
+
+  inquiryTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      inquiryTabs.forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+      const target = tab.getAttribute('data-target');
+      contents.forEach((content) => {
+        if (content.id === target) {
+          content.classList.add('active');
+        } else {
+          content.classList.remove('active');
+        }
+      });
+      updateUnderline();
+    });
+  });
+</script>

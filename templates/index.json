@@ -1,0 +1,879 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "media-slideshow": {
+      "type": "media-slideshow",
+      "blocks": {
+        "media_slide_kGUcdY": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "background-4",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/LFX_website_1.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Loft Türen aus Glas und Metall",
+            "heading": "Elevate your living space",
+            "heading_size": "h1",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": true,
+            "button_label": "Jetzt entdecken",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "media_slide_kGUcdY"
+      ],
+      "settings": {
+        "header_overlay": false,
+        "layout": "full",
+        "full": true,
+        "gap": false,
+        "border_radius": false,
+        "aspect_ratio": "full",
+        "bullets_color_scheme": "light",
+        "position_bullets": "right",
+        "bullets_background": false,
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "navigation_position": "sides",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "carousel_dFm8kj": {
+      "type": "carousel",
+      "blocks": {
+        "carousel_slide_XKpehx": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google_02_drzwi03_2_1.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "text_color_scheme": "",
+            "heading": "Drehtüren",
+            "link": ""
+          }
+        },
+        "carousel_slide_chFc47": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google_02_drzwi02_3_1.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "text_color_scheme": "",
+            "heading": "Schiebetüren",
+            "link": ""
+          }
+        },
+        "carousel_slide_F4NcVA": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google02drzwi01_1_1.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "text_color_scheme": "",
+            "heading": "Pivottüren",
+            "link": ""
+          }
+        },
+        "carousel_slide_UYyEf8": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google02drzwi04_1_1.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "text_color_scheme": "",
+            "heading": "Raumteiler",
+            "link": ""
+          }
+        },
+        "carousel_slide_HbrVAA": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google02drzwi04_1_1.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "text_color_scheme": "background-3",
+            "heading": "Festverglasung",
+            "link": ""
+          }
+        },
+        "carousel_slide_k73Pfk": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google_02_drzwi03_2_1.png",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "text_color_scheme": "background-3",
+            "heading": "Loft-Außenelemente",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "carousel_slide_XKpehx",
+        "carousel_slide_chFc47",
+        "carousel_slide_F4NcVA",
+        "carousel_slide_UYyEf8",
+        "carousel_slide_HbrVAA",
+        "carousel_slide_k73Pfk"
+      ],
+      "settings": {
+        "subheading": "Subheading",
+        "heading": "Categories",
+        "heading_size": "h2",
+        "columns": 4,
+        "image_ratio": "portrait",
+        "button_show": true,
+        "button_label": "Button label",
+        "button_link": "",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_jbPxig": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Xm7fnT": {
+          "type": "text",
+          "settings": {
+            "text": "<h1><strong>200 km of steel profiles <\/strong><\/h1><h1><strong>200 tons of glass and <\/strong><\/h1><h1><strong>5000 projects per year.<\/strong><\/h1>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Xm7fnT"
+      ],
+      "custom_css": [
+        ".rich-text__text * {font-size: 78px; line-height: 75%;}",
+        "@media only screen and (max-width: 768px) {.rich-text__text * {font-size: 32px; }}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "lookbook_NQnkRb": {
+      "type": "lookbook",
+      "blocks": {
+        "lookbook_text_B4JYEb": {
+          "type": "lookbook_text",
+          "settings": {
+            "color_scheme": "",
+            "text_position": "center",
+            "subheading": "Maßgefertigte Designlösungen",
+            "heading": "Produkt­anfrage",
+            "heading_size": "h2",
+            "text": "Sie interessieren sich für unsere Stahl-Loft-Türen?  Jedes Element wird individuell auf Ihren Wunsch angefertigt. Gerne gestalten wir mit Ihnen zusammen Ihre individuelle Stahl-Loft-Tür.",
+            "bottom_image_width": 150,
+            "button_show": true,
+            "button_label": "Jetzt anfragen",
+            "button_link": "shopify:\/\/pages\/produkt-anfrage",
+            "button_style": "primary"
+          }
+        },
+        "lookbook_slide_G3pV9y": {
+          "type": "lookbook_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Elo2_fix_na_wprost.png",
+            "button_show": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "lookbook_text_cgTdDC": {
+          "type": "lookbook_text",
+          "settings": {
+            "color_scheme": "background-4",
+            "text_position": "center",
+            "subheading": "Maßgefertigte Designlösungen",
+            "heading": "Wir machen Ihre Vision wahr",
+            "heading_size": "h2",
+            "text": "Stellen Sie jetzt Ihre Anfrage und erhalten Sie ein individuelles Angebot.",
+            "bottom_image_width": 150,
+            "button_show": true,
+            "button_label": "Jetzt anfragen",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "lookbook_text_B4JYEb",
+        "lookbook_slide_G3pV9y",
+        "lookbook_text_cgTdDC"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
+    },
+    "image_with_text_tQWkdw": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "subheading": "Subheading",
+        "heading": "Loft-Drehtüren nach eigenen Wünschen selbst kreieren",
+        "heading_size": "h2",
+        "text": "<p>Description of your company, products, collections, and so on. There may be several paragraphs here.<\/p>",
+        "show_button": true,
+        "button_label": "Jetzt konfigurieren",
+        "button_link": "",
+        "button_style": "primary",
+        "text_align": "top",
+        "text_width": "medium",
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-04-18_at_22.59.03.png",
+        "video": "shopify:\/\/files\/videos\/LFX_website_1.mp4",
+        "height": "adapt",
+        "position": "container",
+        "layout": "text_last",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "gallery-with-text": {
+      "type": "gallery-with-text",
+      "blocks": {
+        "block_2": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LOFTFX-Showroom-Erkrath_4_2000x1500-1024x768.jpg",
+            "show_video": false,
+            "video": "shopify:\/\/files\/videos\/LFX_website_1.mp4",
+            "overlay_opacity": 0.5,
+            "text_color_scheme": "",
+            "subheading": "Subheading",
+            "title": "Visit our showroom",
+            "heading_size": "h2",
+            "text": "For example, a description for your collection, product or other",
+            "show_button": true,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": true
+          }
+        },
+        "block_1": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LOFTFX-Showroom-Erkrath_6_2000x1500-1024x768.jpg",
+            "show_video": false,
+            "video": "shopify:\/\/files\/videos\/LFX_website_1.mp4",
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "subheading": "Subheading",
+            "title": "die Schönheit von Stahl",
+            "heading_size": "h1",
+            "text": "Ein Blickfang auf dem hellen Dachboden: Unser neuer Raumteiler bringt Struktur und Eleganz in den Raum.",
+            "show_button": true,
+            "button_label": "Show now",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        },
+        "block_3": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LOFTFX-Showroom-Erkrath_1_2000x1500-1024x768.jpg",
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/LFX_website_1.mp4",
+            "overlay_opacity": 0.7,
+            "text_color_scheme": "",
+            "subheading": "Subheading",
+            "title": "die Schönheit von Stahl",
+            "heading_size": "h2",
+            "text": "For example, a description for your collection, product or other",
+            "show_button": true,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        }
+      },
+      "block_order": [
+        "block_2",
+        "block_1",
+        "block_3"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "aspect_ratio": "full",
+        "full_width": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "multicolumn_GWVx4C": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KTfdcE": {
+          "type": "column",
+          "settings": {
+            "icon": "hand",
+            "heading": "Beratung",
+            "text": "<p>Haben Sie Fragen zu unseren Produkten oder möchten unsere Loft-Elemente live sehen? Besuchen Sie unseren Showroom in Erkrath.<\/p>",
+            "show_button": true,
+            "button_label": "Termin vereinbaren",
+            "button_link": "",
+            "button_style": "primary",
+            "full_link": false,
+            "additional_text_1": "",
+            "additional_text_2": ""
+          }
+        },
+        "column_mBgQwB": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "heading": "Montage",
+            "text": "<p>LoftFX.de bietet eine professionelle Montage von Lofttüren an. Unser erfahrenes Team sorgt für einen präzisen und sicheren Einbau, damit Ihre neuen Türen perfekt passen und lange halten.<\/p>",
+            "show_button": true,
+            "button_label": "Mehr erfahren",
+            "button_link": "",
+            "button_style": "primary",
+            "full_link": false,
+            "additional_text_1": "",
+            "additional_text_2": ""
+          }
+        },
+        "column_xKB7NV": {
+          "type": "column",
+          "settings": {
+            "icon": "truck",
+            "heading": "Lieferung",
+            "text": "<p>LoftFX.de bietet sicheren Transport für Ihre Lofttüren. Unsere Experten sorgen dafür, dass Ihre Türen unbeschädigt und pünktlich bei Ihnen ankommen.<\/p>",
+            "show_button": true,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "primary",
+            "full_link": false,
+            "additional_text_1": "",
+            "additional_text_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_KTfdcE",
+        "column_mBgQwB",
+        "column_xKB7NV"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_type": "solid",
+        "color_scheme": "background-1",
+        "multicolumn_to_show": 3,
+        "heading": "Unsere DNA Unser Service",
+        "heading_size": "h2",
+        "image_width": "medium",
+        "image_ratio": "portrait",
+        "object_fit": "cover",
+        "swipe_on_mobile": false,
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_collection_UjgJPk": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_item_g89pCf": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "beratung",
+            "image": "shopify:\/\/shop_images\/three-woman-hold-a-meeting-at-a-dark-wooden-table.jpg",
+            "show_video": false,
+            "overlay_opacity": 0
+          }
+        },
+        "collection_item_Kitwrc": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "visualisierung",
+            "image": "shopify:\/\/shop_images\/home_1_a.jpg",
+            "show_video": false,
+            "overlay_opacity": 0
+          }
+        },
+        "collection_item_ikfxdM": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "lieferung",
+            "image": "shopify:\/\/shop_images\/shipping-boxes-on-red-brick.jpg",
+            "show_video": false,
+            "overlay_opacity": 0
+          }
+        },
+        "collection_item_dwaqWt": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "montage",
+            "image": "shopify:\/\/shop_images\/LoftFX_Produktion_4_2000x2000_8cf42ab0-889e-496c-80ab-77456b696652.jpg",
+            "show_video": false,
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_g89pCf",
+        "collection_item_Kitwrc",
+        "collection_item_ikfxdM",
+        "collection_item_dwaqWt"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".featured-collection__link button button--primary-size button--secondary focus-inset {display: none;}"
+      ],
+      "settings": {
+        "section_type": "with_autoplay",
+        "subheading": "Subheading",
+        "heading": "Unsere DNA Unser Service",
+        "heading_size": "h2",
+        "text": "Some Der Geist urbanen Designs fließt in jedes einzelne unserer Werke. Mit minimalistischen schwarzen Stahlprofilen und klaren Glasscheiben bieten unsere Türen eine perfekte Symbiose aus Stärke und Leichtigkeit, die jedem Raum einen offenen und zugleich behüteten Charakter verleiht.",
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "color_scheme": "",
+        "slide_duration": 5,
+        "button_style": "secondary",
+        "nav_position": "center",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "categories_list_44NChb": {
+      "type": "categories-list",
+      "blocks": {
+        "collection_item_QzLkLV": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "color_scheme": "",
+            "color_scheme_2": "",
+            "image": "shopify:\/\/shop_images\/HOM-online_SCENA11-HR-4K-854x1024.jpg",
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/LFX_website_1.mp4",
+            "overlay_opacity": 0.4
+          }
+        },
+        "collection_item_w833CD": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "color_scheme": "",
+            "color_scheme_2": "",
+            "show_video": false,
+            "overlay_opacity": 0.4
+          }
+        },
+        "collection_item_hLQiar": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "color_scheme": "",
+            "color_scheme_2": "",
+            "show_video": false,
+            "overlay_opacity": 0.4
+          }
+        },
+        "collection_item_RMHnaV": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "color_scheme": "",
+            "color_scheme_2": "",
+            "show_video": false,
+            "overlay_opacity": 0.4
+          }
+        },
+        "collection_item_LHEQjn": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "color_scheme": "",
+            "color_scheme_2": "",
+            "show_video": false,
+            "overlay_opacity": 0.4
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_QzLkLV",
+        "collection_item_w833CD",
+        "collection_item_hLQiar",
+        "collection_item_RMHnaV",
+        "collection_item_LHEQjn"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "Subheading",
+        "heading": "Ein Spiegelbild deines Stils",
+        "heading_size": "h2",
+        "layout": "grid",
+        "collections_to_show": 4,
+        "show_button": true,
+        "button_label": "Explore All",
+        "button_link": "",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_collection_8cJTzW": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_item_frWPrE": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "griffstangen-druckergarnituren",
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google_07_detal_pochwyt1_caly.png",
+            "show_video": false,
+            "overlay_opacity": 0
+          }
+        },
+        "collection_item_DaXUxb": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google_07_detal_rama_front_1.png",
+            "show_video": false,
+            "overlay_opacity": 0
+          }
+        },
+        "collection_item_XpCd8B": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google_07_detal_rama_skos.png",
+            "show_video": false,
+            "overlay_opacity": 0
+          }
+        },
+        "collection_item_6YNYQp": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google_07_detal_zawias_1.png",
+            "show_video": false,
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_frWPrE",
+        "collection_item_DaXUxb",
+        "collection_item_XpCd8B",
+        "collection_item_6YNYQp"
+      ],
+      "settings": {
+        "section_type": "with_autoplay",
+        "subheading": "Subheading",
+        "heading": "Mit Liebe zum Detail",
+        "heading_size": "h2",
+        "text": "Griffstangen verleihen unseren Elementen einen modernen Loft-Charakter, und Sie können Länge und Position der Tür nach Wunsch bestimmen. Während der Schiebetürgriff Secret ein festes Maß hat, passt die Farbe der Griffstange immer zur Rahmenfarbe.",
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "color_scheme": "",
+        "slide_duration": 5,
+        "button_style": "secondary",
+        "nav_position": "center",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "media_slideshow_ipfzyC": {
+      "type": "media-slideshow",
+      "blocks": {
+        "media_slide_eUm9Ui": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0.5,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/LFX_website_1.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Erkrath",
+            "heading": "Unsere Showroom",
+            "heading_size": "h2",
+            "description": "Sie möchten unsere Produkte anfassen und in Originalgröße erleben? Dann besuchen Sie uns in unseren neuen Showroom in Erkrath.",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": true,
+            "button_label": "Termin vereinbaren",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "media_slide_eUm9Ui"
+      ],
+      "settings": {
+        "header_overlay": true,
+        "layout": "full",
+        "full": false,
+        "gap": false,
+        "border_radius": false,
+        "aspect_ratio": "2\/1",
+        "bullets_color_scheme": "",
+        "position_bullets": "right",
+        "bullets_background": false,
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "navigation_position": "sides",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "featured_blog_B7xA4A": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "heading": "Latest Articles",
+        "heading_size": "h2",
+        "post_layout": "column",
+        "blog": "news",
+        "post_limit": 6,
+        "post_limit_grid": 4,
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": false,
+        "show_excerpt": true,
+        "show_view_all": true,
+        "button_label": "Weiterlesen",
+        "button_style": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "image_with_text_6KAU98": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "heading": "Unser Showroom",
+        "heading_size": "h2",
+        "text": "<p>Sie möchten unsere Produkte anfassen und in Originalgröße erleben? Dann besuchen Sie uns in unseren neuen Showroom in Erkrath.<\/p>",
+        "show_button": true,
+        "button_label": "Termin vereinbaren",
+        "button_link": "",
+        "button_style": "primary",
+        "text_align": "top",
+        "text_width": "medium",
+        "image": "shopify:\/\/shop_images\/LOFTFX-Showroom-Erkrath_2_2000x1500-1024x768.jpg",
+        "height": "large",
+        "position": "container",
+        "layout": "text_last",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "gallery_with_text_qdr9UB": {
+      "type": "gallery-with-text",
+      "blocks": {
+        "featured_gallery_frNae7": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ELO2_fix_z_boku.png",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "background-4",
+            "subheading": "Subheading",
+            "title": "Some heading",
+            "heading_size": "h2",
+            "text": "For example, a description for your collection, product or other",
+            "show_button": true,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        },
+        "featured_gallery_XzUcEY": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_2461.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "subheading": "Subheading",
+            "title": "Some heading",
+            "heading_size": "h2",
+            "text": "For example, a description for your collection, product or other",
+            "show_button": true,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        },
+        "featured_gallery_HLHAN7": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6918.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "subheading": "",
+            "title": "",
+            "heading_size": "h2",
+            "text": "For example, a description for your collection, product or other",
+            "show_button": true,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        }
+      },
+      "block_order": [
+        "featured_gallery_frNae7",
+        "featured_gallery_XzUcEY",
+        "featured_gallery_HLHAN7"
+      ],
+      "settings": {
+        "subheading": "Unserer bereits realisierten Produkte",
+        "heading": "Referenzen",
+        "heading_size": "h2",
+        "aspect_ratio": "full",
+        "full_width": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "instagram_collage_dTBV7i": {
+      "type": "instagram-collage",
+      "blocks": {
+        "instagram_collage_image_G4apde": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google_02_drzwi01_1_1.png"
+          }
+        },
+        "instagram_collage_image_tTtVx7": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OTI_P5_Google_02_detal_1_1.png"
+          }
+        },
+        "instagram_collage_image_NCTtPz": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/akasaka_black_frame_3.jpg"
+          }
+        },
+        "instagram_collage_image_bjG6nU": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/laval_black_frame_2.jpg"
+          }
+        },
+        "instagram_collage_image_kWb9VE": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HOM-online_SCENA11-HR-4K-854x1024.jpg"
+          }
+        },
+        "instagram_collage_image_C7dUyE": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HOM-online_SCENA06-HR-4K-854x1024.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "instagram_collage_image_G4apde",
+        "instagram_collage_image_tTtVx7",
+        "instagram_collage_image_NCTtPz",
+        "instagram_collage_image_bjG6nU",
+        "instagram_collage_image_kWb9VE",
+        "instagram_collage_image_C7dUyE"
+      ],
+      "settings": {
+        "section_type": "static",
+        "subheading": "@loftfx",
+        "heading": "Folgen Sie uns auf Instagram",
+        "heading_size": "h2",
+        "speed_slider_1": 500,
+        "speed_slider_2": 700,
+        "column_to_show": 6,
+        "image_ratio": "square",
+        "show_account": true,
+        "name_account": "",
+        "link_account": "shopify:\/\/collections\/all",
+        "show_description": true,
+        "button_label": "Follow",
+        "button_link": "",
+        "button_style": "primary",
+        "icon": "instagram",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "media-slideshow",
+    "carousel_dFm8kj",
+    "rich_text_jbPxig",
+    "lookbook_NQnkRb",
+    "image_with_text_tQWkdw",
+    "gallery-with-text",
+    "multicolumn_GWVx4C",
+    "featured_collection_UjgJPk",
+    "categories_list_44NChb",
+    "featured_collection_8cJTzW",
+    "media_slideshow_ipfzyC",
+    "featured_blog_B7xA4A",
+    "image_with_text_6KAU98",
+    "gallery_with_text_qdr9UB",
+    "instagram_collage_dTBV7i"
+  ]
+}

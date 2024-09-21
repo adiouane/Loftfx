@@ -1,0 +1,82 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "logo_info",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/LoftFX_Logotype_Gold_RGB.png",
+            "logo_width": 90,
+            "description": "<strong>LoftFX GmbH<\/br><\/strong>+49 (0) 211 598 381 41<\/br><a href=\"mailto:anfrage@loftfx.de\">anfrage@loftfx.de<\/a>"
+          }
+        },
+        "footer-4": {
+          "type": "contacts",
+          "settings": {
+            "description": "Unsere Showroom",
+            "contact_info": "<p>Steinhof 10a<br\/>40699 Erkrath<\/p><p>Mo bis Fr: 08:30 – 16:30<br\/>Samstag: 10:00  – 14:00<br\/>Nach Terminvereinbarung.<br\/>Rufen Sie uns gerne an.<\/p>"
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Customer service",
+            "menu": "customer-service",
+            "default_open": false
+          }
+        },
+        "footer-3": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Business",
+            "menu": "sidebar-menu",
+            "default_open": false
+          }
+        },
+        "footer-5": {
+          "type": "subscribe",
+          "settings": {
+            "heading": "Newsletter",
+            "text": "Erhalten Sie 5% Rabatt auf Ihre erste Bestellung!",
+            "additional_text": "Durch Anklicken von \"Abonnieren\" erkläre ich mich mit dem Erhalt von kommerziellen Informationen an die oben genannte E-Mail und mit der Verarbeitung meiner Daten im Zusammenhang mit dem Newsletter einverstanden. Ich habe die und akzeptiere die Datenschutzpolitik.",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-4",
+        "footer-1",
+        "footer-3",
+        "footer-5"
+      ],
+      "settings": {
+        "color_scheme": "background-3",
+        "show_border": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": false,
+        "show_social": false,
+        "enable_copyright_date": true,
+        "enable_copyright_shopname": true,
+        "show_policy": false,
+        "enable_follow_on_shop": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

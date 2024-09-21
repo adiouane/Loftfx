@@ -1,0 +1,128 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "description",
+        "variant_picker",
+        "buy_buttons"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "thumbs_aside",
+        "image_fit": "cover",
+        "image_fit_modal": "contain",
+        "enable_autoheight": false,
+        "columns_desktop": "2"
+      }
+    },
+    "collapsible_content_7QfhMi": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_73m3ji": {
+          "type": "accordion",
+          "settings": {
+            "question": "Some title",
+            "answer": "<p>Some description<\/p>"
+          }
+        },
+        "accordion_xtNGiQ": {
+          "type": "accordion",
+          "settings": {
+            "question": "Some title",
+            "answer": "<p>Some description<\/p>"
+          }
+        },
+        "accordion_gRQQXQ": {
+          "type": "accordion",
+          "settings": {
+            "question": "Some title",
+            "answer": "<p>Some description<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_73m3ji",
+        "accordion_xtNGiQ",
+        "accordion_gRQQXQ"
+      ],
+      "settings": {
+        "subheading": "Subheading",
+        "heading": "Heading",
+        "heading_size": "h2",
+        "show_button": true,
+        "button_label": "Some label",
+        "button_link": "",
+        "button_style": "simple",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "products_limit": 6,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_collection": true,
+        "show_desc": false,
+        "columns_mobile": "1",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_7QfhMi",
+    "product-recommendations"
+  ]
+}

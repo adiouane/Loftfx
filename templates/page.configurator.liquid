@@ -1,0 +1,111 @@
+<div style="height: 90vmin"><omniaz-procedural-configurator id="app"></omniaz-procedural-configurator></div>
+    <div><button id="preset1">Preset 1</button><button id="preset2">Preset 2</button></div>
+    <script>
+      (async () => {
+        await customElements.whenDefined('omniaz-procedural-configurator');
+
+        const el = document.querySelector('#app');
+
+        console.log(el);
+
+        const preset1 = {
+          version: 1,
+          modelProperties: {
+            wallOpeningWidth: 1.2,
+            wallOpeningHeight: 2.1,
+            isOpen: false,
+            doorType: 'pivot',
+            automaticDoorBottom: true,
+            color: 'ral9005',
+            constructionBars: true,
+            finish: 'smooth',
+            glass: 'grey',
+            doorHeight: 0,
+            doorWidth: 0,
+            featureBarsLayout: 'polo5',
+            installationClearance: '-0.05',
+            hingesPosition: 'right',
+            handleType: 'handle',
+            handleModel: 'qubis',
+            gripQuantity: 'oneHandle',
+            gripModel: 'gracia',
+            gripHandleAdjustment: 0.1,
+            gripLocation: '1050',
+            handleLocation: '1050',
+            gripLength: '500',
+            lock: 'handleOnly',
+            doorVariant: 'singleDoor',
+            activeLeaf: 'right',
+            rightDoorLeafFeatureBarLayout: 'clear',
+            leftDoorLeafFeatureBarLayout: 'clear',
+            bottomPanel: false,
+            topFix: false,
+            leftFix: false,
+            rightFix: true,
+            proportions: 'symmetrical',
+            topFixSize: 0.3,
+            leftFixSize: 0.3,
+            rightFixSize: 0.3,
+            topFixBars: 'passingBars',
+            leftFixFeatureBarsLayout: 'inherit',
+            rightFixFeatureBarsLayout: 'inherit',
+          },
+        };
+
+        const preset2 = {
+          version: 1,
+          modelProperties: {
+            wallOpeningWidth: 1.2,
+            wallOpeningHeight: 2.1,
+            isOpen: false,
+            doorType: 'sliding',
+            automaticDoorBottom: true,
+            color: 'ral9005',
+            constructionBars: true,
+            finish: 'smooth',
+            glass: 'grey',
+            doorHeight: 0,
+            doorWidth: 0,
+            featureBarsLayout: 'polo3Cross',
+            installationClearance: '-0.05',
+            hingesPosition: 'right',
+            handleType: 'handle',
+            handleModel: 'qubis',
+            gripQuantity: 'oneHandle',
+            gripModel: 'gracia',
+            gripHandleAdjustment: 0.1,
+            gripLocation: '1050',
+            handleLocation: '1050',
+            gripLength: '500',
+            lock: 'handleOnly',
+            doorVariant: 'singleDoor',
+            activeLeaf: 'right',
+            rightDoorLeafFeatureBarLayout: 'clear',
+            leftDoorLeafFeatureBarLayout: 'clear',
+            bottomPanel: false,
+            topFix: true,
+            leftFix: true,
+            rightFix: true,
+            proportions: 'symmetrical',
+            topFixSize: 0.3,
+            leftFixSize: 0.3,
+            rightFixSize: 0.3,
+            topFixBars: 'passingBars',
+            leftFixFeatureBarsLayout: 'inherit',
+            rightFixFeatureBarsLayout: 'inherit',
+          },
+        };
+
+        document.querySelector('#preset1').addEventListener('click', () => {
+          el.loadPreset(preset1);
+        });
+
+        document.querySelector('#preset2').addEventListener('click', () => {
+          el.loadPreset(preset2);
+        });
+
+        el.addEventListener('omniaz:save-scene', (event) => {
+          console.log(event.detail.preset);
+        });
+      })();
+    </script>

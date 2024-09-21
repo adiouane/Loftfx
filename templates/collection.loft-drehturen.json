@@ -1,0 +1,129 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "color_scheme": "background-4",
+        "layout": "overlay",
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "image_products": "{{ collection.image }}",
+        "opacity_overlay": 0.3,
+        "margin_top": "no-indent",
+        "margin_bottom": "s"
+      }
+    },
+    "benefits_7BMGip": {
+      "type": "benefits",
+      "blocks": {
+        "column_btDeJa": {
+          "type": "column",
+          "settings": {
+            "icon": "return",
+            "heading": "Öffnet in eine Richtung bis zu 180°"
+          }
+        },
+        "column_jVgJCH": {
+          "type": "column",
+          "settings": {
+            "icon": "unmute",
+            "heading": "Schallschutz >25 dB"
+          }
+        },
+        "column_MLBTjQ": {
+          "type": "column",
+          "settings": {
+            "icon": "ruler",
+            "heading": "Max. Türbreite 1100mm"
+          }
+        }
+      },
+      "block_order": [
+        "column_btDeJa",
+        "column_jVgJCH",
+        "column_MLBTjQ"
+      ],
+      "settings": {
+        "column_to_show": 3,
+        "content_position": "center",
+        "padding_top": "no-indent",
+        "padding_bottom": "xs"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 15,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_collection": true,
+        "show_desc": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "collapsible_content_dNJLgW": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_E4qjhK": {
+          "type": "accordion",
+          "settings": {
+            "question": "Wie weit lässt sich die Drehtür öffnen?",
+            "answer": "<p>Some description<\/p>"
+          }
+        },
+        "accordion_cQFbrN": {
+          "type": "accordion",
+          "settings": {
+            "question": "Kann man Drehtüren mit Magnetverschluss auch verriegeln?",
+            "answer": "<p>Some description<\/p>"
+          }
+        },
+        "accordion_P4MQHk": {
+          "type": "accordion",
+          "settings": {
+            "question": "Wie groß ist das Spaltmaß zwischen Boden und Türflügel?",
+            "answer": "<p>Some description<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_E4qjhK",
+        "accordion_cQFbrN",
+        "accordion_P4MQHk"
+      ],
+      "settings": {
+        "subheading": "Loft Drehtüren",
+        "heading": "FAQ",
+        "heading_size": "h2",
+        "show_button": true,
+        "button_label": "Weiterlesen",
+        "button_link": "",
+        "button_style": "simple",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "benefits_7BMGip",
+    "product-grid",
+    "collapsible_content_dNJLgW"
+  ]
+}
