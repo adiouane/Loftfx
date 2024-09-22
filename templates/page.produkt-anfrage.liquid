@@ -1439,7 +1439,9 @@ Nur Schiebetür">
                   Montage wünschen bieten wir Ihnen die Elemente mit Versandkosten an.
                 </p>
                 <label>
-                  <input type="checkbox" id="assembly">
+                  <input type="checkbox" id="assembly"
+                  name="Montage erwünscht?" 
+                  >
                   Montage erwünscht?
                 </label>
               </section>
@@ -1452,7 +1454,8 @@ Nur Schiebetür">
                   Sollte Ihr gewünschtes Produkt über die verfügbaren Optionen hinausgehen, schreiben Sie uns gerne eine
                   Nachricht. Gemeinsam finden wir eine Lösung für Ihr Wunsch-Loft-Element.
                 </p>
-                <textarea class="lofty-product-form__textarea" placeholder="Ihre Nachricht an uns"></textarea>
+                <textarea class="lofty-product-form__textarea" placeholder="Ihre Nachricht an uns" name="nachricht"
+                  id="nachricht"></textarea>
               </section>
 
               <section class="lofty-product-form__section">
@@ -1462,14 +1465,19 @@ Nur Schiebetür">
                   verwenden.
                 </p>
                 <div class="lofty-product-form__upload">
-                  <svg class="lofty-product-form__upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="17 8 12 3 7 8"></polyline>
-                    <line x1="12" y1="3" x2="12" y2="15"></line>
-                  </svg>
-                  <p class="lofty-product-form__upload-text">Zur Dateiauswahl klicken</p>
-                  <p class="lofty-product-form__upload-info">max. 5 Dateien, max. 8 MB</p>
+                  <input type="file" id="file-upload" class="lofty-product-form__file-input" multiple
+                    accept="image/*,.pdf" style="display: none;">
+                  <label for="file-upload" class="lofty-product-form__upload-label">
+                    <svg class="lofty-product-form__upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="17 8 12 3 7 8"></polyline>
+                      <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <p class="lofty-product-form__upload-text">Zur Dateiauswahl klicken</p>
+                    <p class="lofty-product-form__upload-info">max. 5 Dateien, max. 8 MB</p>
+                  </label>
+                  <div id="file-list" class="lofty-product-form__file-list"></div>
                 </div>
               </section>
             </div>
@@ -1574,7 +1582,7 @@ Nur Schiebetür">
 
 <script>
   // select user selections -------------------------
-  
+
   const inquiryTabs = document.querySelectorAll('.inquiry-tabs__nav-item');
   const contents = document.querySelectorAll('.inquiry-tabs__content');
 
@@ -1668,6 +1676,7 @@ Nur Schiebetür">
           console.log('Form submitted');
           // You can add your form submission logic here
           console.log(dataStep1, dataStep2, dataStep3, dataStep4, dataStep5);
+          sendToPipedrive();
         }
       });
     });
@@ -1686,84 +1695,319 @@ Nur Schiebetür">
     showTab(contents[0].id);
   });
 
+
+  // upload file -------------------------
+  document.addEventListener('DOMContentLoaded', function () {
+    const fileInput = document.getElementById('file-upload');
+    const fileList = document.getElementById('file-list');
+    const maxFiles = 5;
+    const maxSize = 8 * 1024 * 1024; // 8 MB in bytes
+
+    fileInput.addEventListener('change', function (e) {
+      const files = Array.from(e.target.files);
+      fileList.innerHTML = ''; // Clear previous file list
+
+      if (files.length > maxFiles) {
+        alert(`Bitte wählen Sie maximal ${maxFiles} Dateien aus.`);
+        fileInput.value = ''; // Clear the file input
+        return;
+      }
+
+      let totalSize = 0;
+      files.forEach(file => {
+        totalSize += file.size;
+        if (totalSize > maxSize) {
+          alert(`Die Gesamtgröße der Dateien überschreitet ${maxSize / 1024 / 1024} MB.`);
+          fileInput.value = ''; // Clear the file input
+          fileList.innerHTML = ''; // Clear the file list
+          return;
+        }
+
+        const fileItem = document.createElement('div');
+        fileItem.className = 'lofty-product-form__file-item';
+        fileItem.textContent = `${file.name} (${(file.size / 1024).toFixed(2)} KB)`;
+        fileList.appendChild(fileItem);
+      });
+
+      // Update the data object
+      updateStepData(4, 'uploadedFiles', files.map(f => f.name).join(', '));
+    });
+  });
+
+
   // save all tabs data value in data object so we can save it in sever -------------------------
-  
- let dataStep1 = {};
- let dataStep2 = {};
- let dataStep3 = {};
- let dataStep4 = {};
- let dataStep5 = {};
+
+  let dataStep1 = {};
+  let dataStep2 = {};
+  let dataStep3 = {};
+  let dataStep4 = {};
+  let dataStep5 = {};
 
 
- // 2 Then, we'll create a function to update these objects when a selection is made:
+  // 2 Then, we'll create a function to update these objects when a selection is made:
 
- function updateStepData(stepNumber, key, value) {
-  switch(stepNumber) {
-    case 1:
-      dataStep1[key] = value;
-      break;
-    case 2:
-      dataStep2[key] = value;
-      break;
-    case 3:
-      dataStep3[key] = value;
-      break;
-    case 4:
-      dataStep4[key] = value;
-      break;
-    case 5:
-      dataStep5[key] = value;
-      break;
-  }
-}
-
-// 3 . Now, we'll add event listeners to capture selections:
-
-document.addEventListener('DOMContentLoaded', function() {
-  // ... (existing code) ...
-
-  // Add event listeners for radio buttons and checkboxes
-  document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(input => {
-    input.addEventListener('change', function() {
-      const stepNumber = parseInt(this.closest('.inquiry-tabs__content').id.replace('step', ''));
-      const key = this.name;
-      const value = this.type === 'checkbox' ? this.checked : this.value;
-      updateStepData(stepNumber, key, value);
-    });
-  });
-
-  // Add event listeners for text inputs and textareas
-  document.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea').forEach(input => {
-    input.addEventListener('blur', function() {
-      const stepNumber = parseInt(this.closest('.inquiry-tabs__content').id.replace('step', ''));
-      const key = this.id;
-      const value = this.value;
-      updateStepData(stepNumber, key, value);
-    });
-  });
-
-  // 4- Finally, let's modify the "Absenden" button click handler to log all the collected data:
-
-  nextButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const currentTab = button.closest('.inquiry-tabs__content');
-    const currentIndex = Array.from(contents).indexOf(currentTab);
-    if (currentIndex < contents.length - 1) {
-      showTab(contents[currentIndex + 1].id);
-    } else if (button.textContent.trim() === 'Absenden') {
-      // Log all collected data
-      console.log('Step 1 Data:', dataStep1);
-      console.log('Step 2 Data:', dataStep2);
-      console.log('Step 3 Data:', dataStep3);
-      console.log('Step 4 Data:', dataStep4);
-      console.log('Step 5 Data:', dataStep5);
-      console.log("-------------")
-      // Here you can add code to send this data to your server
+  function updateStepData(stepNumber, key, value) {
+    switch (stepNumber) {
+      case 1:
+        dataStep1[key] = value;
+        break;
+      case 2:
+        dataStep2[key] = value;
+        break;
+      case 3:
+        dataStep3[key] = value;
+        break;
+      case 4:
+        dataStep4[key] = value;
+        break;
+      case 5:
+        dataStep5[key] = value;
+        break;
     }
+  }
+
+  // 3 . Now, we'll add event listeners to capture selections:
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // ... (existing code) ...
+
+    // Add event listeners for radio buttons and checkboxes
+    document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(input => {
+      input.addEventListener('change', function () {
+        const stepNumber = parseInt(this.closest('.inquiry-tabs__content').id.replace('step', ''));
+        const key = this.name;
+        const value = this.type === 'checkbox' ? this.checked : this.value;
+        updateStepData(stepNumber, key, value);
+      });
+    });
+
+    // Add event listeners for text inputs and textareas
+    document.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea').forEach(input => {
+      input.addEventListener('blur', function () {
+        const stepNumber = parseInt(this.closest('.inquiry-tabs__content').id.replace('step', ''));
+        const key = this.id;
+        const value = this.value;
+        updateStepData(stepNumber, key, value);
+      });
+    });
+
+    // 4- Finally, let's modify the "Absenden" button click handler to log all the collected data:
+
+    nextButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const currentTab = button.closest('.inquiry-tabs__content');
+        const currentIndex = Array.from(contents).indexOf(currentTab);
+        if (currentIndex < contents.length - 1) {
+          showTab(contents[currentIndex + 1].id);
+        } else if (button.textContent.trim() === 'Absenden') {
+          // send data to api
+        }
+      });
+    });
+
+    // Add event listeners for radio buttons and checkboxes
+    document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach(input => {
+      input.addEventListener('change', function () {
+        const stepNumber = parseInt(this.closest('.inquiry-tabs__content').id.replace('step', ''));
+        const key = this.name;
+        const value = this.type === 'checkbox' ? this.checked : this.value;
+        updateStepData(stepNumber, key, value);
+      });
+    });
+
+    // Add event listeners for text inputs and textareas
+    document.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea').forEach(input => {
+      input.addEventListener('blur', function () {
+        const stepNumber = parseInt(this.closest('.inquiry-tabs__content').id.replace('step', ''));
+        const key = this.id;
+        const value = this.value;
+        updateStepData(stepNumber, key, value);
+      });
+    });
+
+    // Add specific listeners for step 4
+    const step4Content = document.getElementById('step4');
+    if (step4Content) {
+      // Width and Height inputs
+      const widthInput = step4Content.querySelector('#width');
+      const heightInput = step4Content.querySelector('#height');
+      [widthInput, heightInput].forEach(input => {
+        input.addEventListener('change', function () {
+          updateStepData(4, this.id, this.value);
+        });
+      });
+
+      // Assembly checkbox
+      const assemblyCheckbox = step4Content.querySelector('#assembly');
+      if (assemblyCheckbox) {
+        assemblyCheckbox.addEventListener('change', function () {
+          updateStepData(4, 'assembly', this.checked);
+        });
+      }
+
+      // Notes textarea
+      const notesTextarea = step4Content.querySelector('textarea[name="nachricht"]');
+      if (notesTextarea) {
+        notesTextarea.addEventListener('blur', function () {
+          updateStepData(4, 'notes', this.value);
+        });
+      }
+
+      // File upload
+      // const fileInput = step4Content.querySelector('#file-upload');
+      // if (fileInput) {
+      //   fileInput.addEventListener('change', function (e) {
+      //     const files = Array.from(e.target.files);
+      //     const fileNames = files.map(f => f.name).join(', ');
+      //     updateStepData(4, 'uploadedFiles', fileNames);
+      //   });
+      // }
+    }
+
   });
-});
 
-});
+  // save data to pipedrive -------------------------------------------------
 
 
+  const cloudinaryUrl = 'https://api.cloudinary.com/v1_1/dszbpdtlf/image/upload';
+  const uploadPreset = 'adiouane'; // Ensure this preset is correctly configured in Cloudinary
+
+  async function uploadImageToCloudinary(file) {
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('upload_preset', uploadPreset);
+
+    try {
+      const response = await fetch(cloudinaryUrl, {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.secure_url) {
+        console.log('Image uploaded successfully to Cloudinary:', data);
+        return data.secure_url; // Return the URL of the uploaded image
+      } else {
+        throw new Error(`Error uploading image to Cloudinary: ${data.error.message}`);
+      }
+    } catch (error) {
+      console.error('Error uploading image to Cloudinary:', error);
+      throw error;
+    }
+  }
+
+
+  async function sendToPipedrive() {
+    const apiToken = '504cb60e4f392f4c586d660fa789871477e23f9d';
+    const apiUrl = 'https://api.pipedrive.com/v1/deals';
+
+    // Combine all the data
+    const dealData = {
+      ...dataStep1,
+      ...dataStep2,
+      ...dataStep3,
+      ...dataStep4,
+      ...dataStep5
+    };
+
+    console.log("Full deal data:", dealData);
+
+    // Create the deal title
+    const dealTitle = `Loft Door Inquiry - ${dealData['vorname-name'] || 'Unknown Customer'}`;
+
+    // Prepare the data for Pipedrive
+    const pipedriveData = {
+      title: dealTitle,
+      person_id: null,
+      org_id: null,
+      status: 'open',
+      value: 0,
+      currency: 'EUR',
+      add_time: new Date().toISOString(),
+      visible_to: '3'
+    };
+
+    console.log("pipedriveData:", pipedriveData);
+
+    try {
+      // Upload images to Cloudinary if any
+      let imageUrls = [];
+      if (dealData.uploadedFiles) {
+        const fileInput = document.querySelector('input[type="file"]');
+        if (fileInput && fileInput.files.length > 0) {
+          const file = fileInput.files[0]; // Get the first file
+          const imageUrl = await uploadImageToCloudinary(file);
+          imageUrls.push(imageUrl);
+        }
+      }
+      // create a deal
+      const response = await fetch(`${apiUrl}?api_token=${apiToken}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(pipedriveData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        console.log('Deal created successfully:', data);
+
+        // Create a description string with all the form data
+    // Create a description string with all the form data
+      let description = Object.entries(dealData)
+          .filter(([key]) => key !== 'uploadedFiles') // Remove uploadedFiles from description
+          .map(([key, value]) => `${key}: ${value}`)
+          .join('\n');
+        // Add image URLs to the description
+        if (imageUrls.length > 0) {
+          description += '\n\nUploaded Images files:\n' + imageUrls.join('\n');
+        }
+        // Add the description as a note to the deal
+        await addNoteToDeal(data.data.id, description);
+
+        // Show success message to the user
+        alert('Your inquiry has been submitted successfully!');
+      } else {
+        console.error('Error response from Pipedrive:', data);
+        throw new Error(`Error creating deal: ${data.error || 'Unknown error'}`);
+      }
+    } catch (error) {
+      console.error('Error sending data to Pipedrive:', error);
+      alert('There was an error submitting your inquiry. Please try again later.');
+    }
+  }
+
+  async function addNoteToDeal(dealId, content) {
+    const apiToken = '504cb60e4f392f4c586d660fa789871477e23f9d';
+    const apiUrl = 'https://api.pipedrive.com/v1/notes';
+
+    const noteData = {
+      content: content,
+      deal_id: dealId
+    };
+
+    try {
+      const response = await fetch(`${apiUrl}?api_token=${apiToken}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(noteData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        console.log('Note added to deal successfully:', data);
+      } else {
+        console.error('Error adding note to deal:', data);
+        throw new Error(`Error adding note to deal: ${data.error || 'Unknown error'}`);
+      }
+    } catch (error) {
+      console.error('Error adding note to deal:', error);
+    }
+  }
 </script>

@@ -356,12 +356,18 @@
   border-color: #000;
 }
 
+.lofty-product-form__upload:hover {
+  
+  border-color: #faa717;
+  border: 3px solid #faa717;
+}
 
 .lofty-product-form__upload-icon {
   width: 48px;
   height: 48px;
   margin-bottom: 15px;
   color: #070707;
+  cursor: pointer;
 }
 
 .lofty-product-form__upload-text {
