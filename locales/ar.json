@@ -1266,6 +1266,19 @@
     },
     "errors": {
       "blank": "لا يمكن أن يكون فارغا"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "zero_to_two_hours": "عادة ما تكون جاهزة خلال ساعتين",
+        "two_to_four_hours": "عادة ما تكون جاهزة في 4 ساعات",
+        "immediately": "جاهز للاستلام الآن",
+        "next_day": "جاهز للاستلام في اليوم التالي"
+      }
+    },
+    "subscriptions": {
+      "buyer_consent_product": "هذا العنصر عبارة عن عملية شراء متكررة أو مؤجلة. من خلال الاستمرار، أوافق على %{cancellationPolicyLink} وأسمح لك بتحصيل رسوم من وسيلة الدفع الخاصة بي بالأسعار والتكرار والتاريخ المدرجين في هذه الصفحة حتى يتم تنفيذ طلبي أو إلغاؤه، إذا سُمح بذلك.",
+      "buyer_consent_cart": "أحد العناصر أو أكثر في عربة التسوق الخاصة بك عبارة عن عملية شراء متكررة أو مؤجلة. من خلال الاستمرار، أوافق على %{cancellationPolicyLink} وأسمح لك بتحصيل رسوم من وسيلة الدفع الخاصة بي بالأسعار والتكرار والتاريخ المدرجين في هذه الصفحة حتى يتم تنفيذ طلبي أو إلغائه، إذا سمح بذلك.",
+      "cancellation_policy": "سياسة الإلغاء"
     }
   },
   "customer_accounts": {
@@ -1358,7 +1371,46 @@
           }
         },
         "table_view": "إظهار عرض الجدول",
-        "show_order_actions_accessibility_label": "إظهار إجراءات الطلب للطلب {{name}}"
+        "show_order_actions_accessibility_label": "إظهار إجراءات الطلب للطلب {{name}}",
+        "column_headers": {
+          "order": "طلب",
+          "items": "أغراض",
+          "total": "المجموع",
+          "actions_accessibility_label": "الإجراءات",
+          "products_accessibility_label": "منتجات"
+        },
+        "delivered": "تم التسليم {{date}}",
+        "empty_state_order_source_description": "سيتم عرض الطلبات المقدمة عبر {{email}} هنا فقط.",
+        "empty_state_subtitle": "اذهب إلى المتجر لتقديم الطلب.",
+        "empty_state_title": "لا توجد طلبات حتى الآن",
+        "empty_state_title_for_pending_orders": "لا توجد أوامر معلقة",
+        "no_order_banner": "لاختبار الامتداد الخاص بك على صفحة حالة الطلب، قم بإنشاء طلب.",
+        "estimated_shortform": "تاريخ التأريخ: {{date}}",
+        "estimated_delivery": "من المتوقع {{date}}",
+        "one_images_accessibility_label": "يتضمن الطلب {{lineItemName1}}",
+        "two_images_accessibility_label": "يتضمن الطلب {{lineItemName1}} و {{lineItemName2}}",
+        "three_images_accessibility_label": "يتضمن الطلب {{lineItemName1}} {{lineItemName2}} {{lineItemName3}}",
+        "four_images_accessibility_label": "يتضمن الطلب {{lineItemName1}} {{lineItemName2}} {{lineItemName3}} {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "يتضمن الطلب {{lineItemName1}} {{lineItemName2}} و {{numberOfAdditionalProducts}} منتجًا إضافيًا",
+        "more_than_four_products_accessibility_label": "يتضمن الطلب {{lineItemName1}} {{lineItemName2}} {{lineItemName3}} و {{numberOfAdditionalProducts}} منتجًا آخر",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} منتجات",
+        "carousel": {
+          "one_products_accessibility_label": "يتضمن الطلب الكمية {{lineItemName1}} {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "يتضمن الطلب الكمية {{lineItemName1}} {{lineItemQuantity1}} ، الكمية {{ {{lineItemName2}} {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "يتضمن الطلب الكمية {{lineItemName1}} {{lineItemQuantity1}} ، الكمية {{lineItemQuantity2}} {{lineItemName2}} {{lineItemName3}} {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "يتضمن الطلب الكمية {{lineItemName1}} {{lineItemQuantity1}} {{lineItemName2}} }، الكمية {{lineItemQuantity2}} {{lineItemName3}} ، الكمية {{lineItemQuantity3}} {{lineItemName4}} الكمية {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "يتضمن الطلب الكمية {{lineItemName1}} {{lineItemQuantity1}} {{lineItemName2}} ، الكمية {{lineItemQuantity2}} {{lineItemName3}} {{lineItemQuantity3}} {{lineItemName4}} }، الكمية {{lineItemQuantity4}} {{lineItemName5}} {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "يتضمن الطلب الكمية {{lineItemName1}} {{lineItemQuantity1}} {{lineItemName2}} ، الكمية {{lineItemQuantity2}} {{lineItemName3}} {{lineItemQuantity3}} {{lineItemName4}} ، الكمية {{lineItemQuantity4}} {{lineItemName5}} ، الكمية {{lineItemQuantity5}} {lineItemName5}} {{lineItemName6}} }}، الكمية {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "يتضمن الطلب الكمية {{lineItemName1}} {{lineItemQuantity1}} {{lineItemName2}} }، والكمية {{lineItemQuantity2}} {{lineItemName3}} }، والكمية {{lineItemQuantity3}} {{lineItemName4}} ، والكمية {{lineItemQuantity4}} {{lineItemName5}} والكمية {{lineItemQuantity5}} {{lineItemName6}} والكمية {{lineItemQuantity6}} والمزيد",
+          "view_order_details": "عرض تفاصيل الطلب",
+          "previous": "سابق",
+          "next": "التالي"
+        },
+        "items": {
+          "one": "{{count}} عنصر",
+          "other": "{{count}} عناصر"
+        }
       },
       "order_status": {
         "attempted_delivery_label": "محاولة التسليم",
@@ -1415,7 +1467,14 @@
         "gift_resend_success": {
           "one": "بطاقة الهدية تم إرسالها مرة أخرى"
         }
-      }
+      },
+      "list_layout_accessibility_label": "خيارات التخطيط",
+      "list_title": "طلبات",
+      "list_title_with_pending_orders": "طلبات:",
+      "list_title_confirmed_orders_accessibility_label": "الطلبات: مؤكدة",
+      "list_title_pending_orders_accessibility_label": "الطلبات: معلقة",
+      "switch_order_type_pending_orders_accessibility_label": "تبديل نوع الطلب، وعرض الطلبات المعلقة حاليًا",
+      "switch_order_type_confirmed_orders_accessibility_label": "تبديل نوع الطلب، عرض الطلبات المؤكدة حاليًا"
     },
     "order_details": {
       "order_details_skeleton_accessibility_label": "قم بتسجيل الدخول لعرض كافة تفاصيل الطلب.",
@@ -2078,6 +2137,79 @@
         "button": "تسجيل الخروج في كل مكان",
         "warning_message": "سيتم تسجيل خروجك على هذا الجهاز أيضًا."
       }
+    },
+    "date": {
+      "humanize": {
+        "lessThanOneHourAgo": {
+          "one": "منذ {{count}} دقيقة",
+          "other": "منذ {{count}} دقيقة"
+        },
+        "lessThanOneMinuteAgo": "الآن",
+        "yesterday": "أمس في {{time}}",
+        "today": "اليوم في {{time}}",
+        "tomorrow": "غدا في {{time}}"
+      }
+    },
+    "enable_javascript": "لعرض حسابك، قم بتمكين JavaScript في إعدادات المتصفح الخاص بك أو قم بتسجيل الدخول باستخدام متصفح آخر.",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "إخفاء قائمة الحساب",
+        "label": "حساب",
+        "show_accessibility_label": "إظهار قائمة الحساب",
+        "nav_accessibility_label": "التنقل بين الحسابات",
+        "open_menu_accessibility_label": "فتح حساب الملاحة",
+        "close_menu_accessibility_label": "إغلاق التنقل في الحساب",
+        "loading_message": "تحميل التنقل في الحساب"
+      },
+      "action_menu_accessibility_label": "مزيد من الإجراءات",
+      "close_menu_accessibility_label": "إغلاق التنقل الرئيسي",
+      "contact_email_subject": "الاتصال من متجر {{shopName}} عبر الإنترنت",
+      "contact_link": "معلومات الاتصال",
+      "delete_confirmation": {
+        "cancel": "يلغي",
+        "delete": "يمسح"
+      },
+      "dismiss_toast": "رفض",
+      "document_title": "{{sectionName}} - {{shopName}} - الحساب",
+      "go_to_store_link": "اذهب إلى المتجر",
+      "loading_message": "تحميل",
+      "log_out_link": "تسجيل الخروج",
+      "logout_overlay_label": "جاري تسجيل خروجك...",
+      "nav_label_accessibility_label": "التنقل الرئيسي",
+      "navigation_accessibility_message": "لقد انتقلت إلى {{sectionName}}",
+      "open_menu_accessibility_label": "افتح شريط التنقل الرئيسي",
+      "orders_link_label": "طلبات",
+      "shop_logo_accessibility_label": "شعار {{shopName}}",
+      "subscriptions_link_label": "الاشتراكات",
+      "settings_link": "إعدادات"
+    },
+    "account_information": {
+      "loading_accessibility_message": "تحميل معلومات الحساب",
+      "loading_finished_accessibility_message": "تم تحميل معلومات الحساب",
+      "profile_card": {
+        "cancel": "يلغي",
+        "cancel_accessibility_label": "إلغاء تحرير الملف الشخصي",
+        "edit": "يحرر",
+        "edit_accessibility_label": "تعديل الملف الشخصي",
+        "email_help_text": "لا يمكن تغيير البريد الإلكتروني المستخدم لتسجيل الدخول",
+        "first_name": "الاسم الأول",
+        "last_name": "اسم العائلة",
+        "no_name_provided_accessibility_label": "لم يتم إضافة اسم",
+        "phone_number_help_text": "لا يمكن تغيير رقم الهاتف المستخدم لتسجيل الدخول",
+        "save": "يحفظ",
+        "save_accessibility_label": "حفظ الملف الشخصي",
+        "title": "حساب تعريفي"
+      },
+      "profile_update_confirmation_message": "تم تحديث الملف الشخصي",
+      "title": "حساب تعريفي",
+      "people": {
+        "pagination": {
+          "load_more": "تحميل المزيد",
+          "load_more_accessibility_label": "تحميل المزيد من الأشخاص",
+          "loading_accessibility_label": "تحميل الأشخاص"
+        }
+      },
+      "add_button": "يضيف"
     }
   },
   "general": {
