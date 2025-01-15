@@ -227,5 +227,297 @@
         "phone_blank": "أدخل رقم الهاتف"
       }
     }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_list": {
+        "list_view": "إظهار عرض القائمة",
+        "no_filtered_results_description": "قم بإزالة أو تعديل المرشحات لرؤية طلباتك",
+        "no_filtered_results_title": "لا توجد نتائج مفلترة",
+        "order_link": "عرض الطلب {{name}}",
+        "order_number": "الطلب {{name}}",
+        "orders_title": "مؤكد",
+        "pagination": {
+          "nav_accessibility_label": "أزرار التنقل بين الطلبات",
+          "next": "التالي",
+          "next_accessibility_label": "الطلبات القادمة",
+          "previous": "السابق",
+          "previous_accessibility_label": "الطلبات السابقة",
+          "load_more": "تحميل المزيد",
+          "load_more_accessibility_label": "تحميل المزيد من الطلبات"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "عرض الطلب للحصول على التفاصيل",
+            "estimated_delivery": "من المتوقع {{date}}",
+            "last_updated": "آخر تحديث {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "تاريخ التسليم المقدر هو {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "الدفع متأخر",
+            "due": "تاريخ الدفع هو {{date}}",
+            "due_today": "الدفع المستحق اليوم",
+            "due_without_date": "الدفع المستحق",
+            "due_on_fulfillment": "الدفع المستحق عند التنفيذ",
+            "pay_to_confirm": "الدفع للتأكيد",
+            "payment_not_due": "الدفع لم يتم استحقاقه بعد"
+          },
+          "table_view": {
+            "overdue": "متأخر",
+            "due": "المستحق {{date}}",
+            "due_today": "المستحق اليوم",
+            "paid": "مدفوع",
+            "due_without_date": "حق",
+            "due_on_fulfillment": "مستحق عند التنفيذ",
+            "pay_to_confirm": "الدفع للتأكيد",
+            "payment_not_due": "لم يحن موعده بعد"
+          }
+        },
+        "sort_by": "فرز حسب: {{option}}",
+        "sort_hide_options_accessibility_label": "إخفاء خيارات الفرز للطلبات المؤكدة.",
+        "sort_show_options_accessibility_label": "إظهار خيارات الفرز للطلبات المؤكدة.",
+        "sort_currently_sorted_by_accessibility_label": "تم الفرز حاليًا حسب: {{option}}",
+        "sort_title": "نوع",
+        "sort": {
+          "date": {
+            "newest": "من الأحدث إلى الأقدم",
+            "oldest": "الأقدم إلى الأحدث"
+          },
+          "location": {
+            "ascending": "الموقع (AZ)",
+            "descending": "الموقع (جنوب أفريقيا)"
+          },
+          "order_number": {
+            "ascending": "رقم الطلب (من الأقل إلى الأعلى)",
+            "descending": "رقم الطلب (من الأعلى إلى الأدنى)"
+          },
+          "order_total": {
+            "ascending": "إجمالي الطلب (من الأقل إلى الأعلى)",
+            "descending": "إجمالي الطلب (من الأعلى إلى الأدنى)"
+          }
+        },
+        "filter_title": "فلتر",
+        "filter": {
+          "clear_section": "مسح القسم",
+          "clear_all": "مسح الكل",
+          "apply": "يتقدم",
+          "date": {
+            "start_date": "تاريخ البدء",
+            "end_date": "تاريخ النهاية",
+            "title": "تاريخ الطلب",
+            "today": "اليوم",
+            "last_7_days": "آخر 7 أيام",
+            "last_30_days": "آخر 30 يوما",
+            "last_90_days": "آخر 90 يوما",
+            "last_365_days": "آخر 12 شهرًا",
+            "custom": "مخصص"
+          }
+        },
+        "table_view": "إظهار عرض الجدول",
+        "show_order_actions_accessibility_label": "إظهار إجراءات الطلب للطلب {{name}}"
+      },
+      "order_status": {
+        "attempted_delivery_label": "محاولة التسليم",
+        "attempted_delivery_description": "محاولة التسليم لم تنجح.",
+        "attempted_to_deliver_label": "حاولت التسليم",
+        "confirmed_description": "لقد تلقينا طلبك.",
+        "on_its_way_description": "هذه الشحنة في طريقها.",
+        "out_for_delivery_description": "هذه الشحنة جاهزة للتسليم.",
+        "preparing_for_shipping_label": "التحضير للشحن",
+        "preparing_for_shipping_description": "يتم تجهيز هذه العناصر للشحن.",
+        "ready_for_pickup_label": "جاهز للإستلام",
+        "ready_for_pickup_description": "هذه العناصر جاهزة للاستلام. يرجى إحضار تأكيد الطلب عند استلام طلبك.",
+        "ready_for_pickup_location": "طلبك جاهز للاستلام من الموقع",
+        "picked_up_label": "التقطت",
+        "picked_up_description": "لقد تم التقاط هذه العناصر.",
+        "canceled_description": "لقد تم إلغاء طلبك في {{date}} .",
+        "canceled_label": "تم الإلغاء",
+        "canceled_title": "لقد تم إلغاء طلبك",
+        "come_back": "ارجع إلى هذه الصفحة للحصول على تحديثات حول حالة شحنتك.",
+        "company_tracking_number": "رقم التتبع الخاص {{company}} :",
+        "confirmed_label": "مؤكد",
+        "confirmed_title": "تم تأكيد طلبك",
+        "confirmed_description_pickup": "سوف تتلقى رسالة بريد إلكتروني عندما يكون طلبك جاهزًا للاستلام.",
+        "confirmed_description_digital": "سوف تتلقى رسالة بريد إلكتروني عندما يكون طلبك جاهزًا.",
+        "confirmed_description_gift_card_text": "سوف تتلقى رسالة نصية عندما يصبح طلبك جاهزًا.",
+        "delivered_description": "لقد تم تسليم هذه الشحنة.",
+        "complete_label": "مكتمل",
+        "delivered_label": "تم التوصيل",
+        "delivered_title": "لقد تم تسليم شحنتك",
+        "delivered_description_digital": {
+          "one": "هذا العنصر كامل.",
+          "other": "هذه العناصر كاملة."
+        },
+        "delivered_description_gift_card": {
+          "one": "تم إرسال بطاقة الهدية عبر البريد الإلكتروني.",
+          "other": "تم إرسال بطاقات الهدايا عبر البريد الإلكتروني."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "تم إرسال بطاقة الهدية برسالة نصية.",
+          "other": "تم إرسال بطاقات الهدايا عن طريق الرسائل النصية."
+        },
+        "gift_card_label": {
+          "one": "بطاقة هدية",
+          "other": "بطاقات الهدايا"
+        },
+        "gift_card_resend": {
+          "one": "إعادة إرسال البريد الإلكتروني",
+          "other": "إعادة إرسال رسائل البريد الإلكتروني"
+        },
+        "gift_card_resend_text": {
+          "one": "إعادة إرسال النص",
+          "other": "إعادة إرسال الرسائل النصية"
+        },
+        "gift_resend_success": {
+          "one": "بطاقة الهدية تم إرسالها مرة أخرى"
+        }
+      }
+    }
+  },
+  "general": {
+    "countdown": {
+      "days": "أيام",
+      "hours": "ساعات",
+      "minutes": "دقائق",
+      "seconds": "ثواني"
+    },
+    "blog": {
+      "author": "بواسطة",
+      "update": "تم التحديث",
+      "publish": "نُشرت"
+    },
+    "dark_mode": {
+      "dark": "الوضع المظلم",
+      "on": "على",
+      "off": "عن"
+    },
+    "video": {
+      "play": "تشغيل/إيقاف الفيديو مؤقتًا",
+      "sound": "فيديو مكتوم الصوت/غير مكتوم الصوت"
+    },
+    "brand": {
+      "label": "ماركة"
+    },
+    "scroll_top": {
+      "label": "انتقل إلى الأعلى"
+    }
+  },
+  "date_formats": {
+    "month_year": "٪بواسطة"
+  },
+  "newsletter": {
+    "label": "بريدك الإلكتروني",
+    "success": "شكرا على الاشتراك!",
+    "button_label": "يشترك",
+    "button_label_request": "إرسال الطلب"
+  },
+  "accessibility": {
+    "skip_to_text": "انتقل إلى المحتوى",
+    "skip_to_product_info": "انتقل إلى معلومات المنتج",
+    "close": "يغلق",
+    "unit_price_separator": "لكل",
+    "vendor": "بائع:",
+    "error": "خطأ",
+    "refresh_page": "يؤدي اختيار التحديد إلى تحديث الصفحة بالكامل.",
+    "link_messages": {
+      "new_window": "يفتح في نافذة جديدة.",
+      "external": "يفتح موقع ويب خارجي."
+    },
+    "of": "ل",
+    "next_slide": "انزلق إلى اليمين",
+    "previous_slide": "حرك إلى اليسار",
+    "loading": "تحميل...",
+    "toggle": "زر القائمة ملء الشاشة",
+    "product_link": "رابط المنتج",
+    "article_link": "رابط المقال",
+    "link": "وصلة",
+    "cart_link": "عربة التسوق المفتوحة",
+    "total_reviews": "استنادًا إلى {{ rating_count }} من المراجعات",
+    "star_reviews_info": "{{ rating_value }} من أصل {{ rating_max }} نجمة"
+  },
+  "blogs": {
+    "article": {
+      "blog": "مدونة",
+      "read_more_title": "اقرأ المزيد: {{ title }}",
+      "comments": {
+        "one": "{{ count }} تعليق",
+        "other": "{{ count }} تعليقات"
+      },
+      "moderated": "يرجى ملاحظة أن التعليقات تحتاج إلى الموافقة قبل نشرها.",
+      "comment_form_title": "اترك تعليقا",
+      "name": "اسم",
+      "email": "بريد إلكتروني",
+      "message": "تعليق",
+      "post": "انشر تعليقا",
+      "back_to_blog": "العودة إلى المدونة",
+      "share": "شارك هذه المقالة",
+      "success": "لقد تم نشر تعليقك بنجاح! شكرا لك!",
+      "success_moderated": "تم نشر تعليقك بنجاح، وسنقوم بنشره بعد قليل، حيث أن مدونتنا تخضع للرقابة."
+    }
+  },
+  "onboarding": {
+    "product_title": "مثال على عنوان المنتج",
+    "collection_title": "اسم مجموعتك"
+  },
+  "products": {
+    "product": {
+      "back": "مجموعة",
+      "add_to_cart": "أضف إلى السلة",
+      "on_sale": "أُوكَازيُون",
+      "sku": "رقم المنتج",
+      "choose_product_options": "اختر الخيارات لـ {{ product_name }}",
+      "product_variants": "متغيرات المنتج",
+      "related_product": "منتج ذو صلة",
+      "media": {
+        "open_featured_media": "فتح الوسائط المميزة في عرض المعرض",
+        "open_media": "افتح الوسائط {{ index }} في عرض المعرض",
+        "play_model": "تشغيل عارض ثلاثي الأبعاد",
+        "play_video": "تشغيل الفيديو"
+      },
+      "quantity": {
+        "label": "كمية",
+        "input_label": "الكمية لـ {{ product }}",
+        "increase": "زيادة الكمية لـ {{ product }}",
+        "decrease": "تقليل الكمية لـ {{ product }}",
+        "minimum_of": "الحد الأدنى من {{ quantity }}",
+        "maximum_of": "الحد الأقصى {{ quantity }}",
+        "multiples_of": "زيادات بمقدار {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> في سلة التسوق",
+        "in_stock": "{{ quantity }} العناصر المتوفرة في المخزون",
+        "out_of_stock": "إنتهى من المخزن"
+      },
+      "pickup_availability": {
+        "view_store_info": "عرض معلومات المتجر",
+        "check_other_stores": "التحقق من التوفر في المتاجر الأخرى",
+        "pick_up_available": "متاح الاستلام",
+        "pick_up_available_at_html": "الاستلام متاح في <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "الاستلام غير متاح حاليًا في <span class=\"color-foreground\">{{ location_name }}</span>",
+        "unavailable": "لم نتمكن من تحميل توفر الاستلام",
+        "refresh": "ينعش"
+      },
+      "price": {
+        "from_price_html": "من {{ price }}",
+        "regular_price": "السعر العادي",
+        "sale_price": "سعر البيع",
+        "unit_price": "سعر الوحدة"
+      },
+      "read_more": "اقرأ المزيد",
+      "read_less": "اقرأ أقل",
+      "reviews": "المراجعات",
+      "share": "شارك هذا المنتج",
+      "show_more": "عرض المزيد",
+      "sold_out": "نفذ",
+      "unavailable": "غير متاح",
+      "value_unavailable": "{{ option_value }} - غير متاح",
+      "variant_sold_out_or_unavailable": "تم بيع النسخة أو عدم توفرها",
+      "vendor": "بائع المنتج",
+      "product_heading": "اسم لمنتجك",
+      "product_description": "وصف المنتج الخاص بك",
+      "video_exit_message": "{{ title }} يفتح مقطع الفيديو بملء الشاشة في نفس النافذة."
+    }
   }
 }
