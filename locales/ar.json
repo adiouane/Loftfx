@@ -3289,7 +3289,8 @@
       "include_taxes": "شامل الضريبة.",
       "shipping_policy_html": "يتم احتساب <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">الشحن</a> عند الخروج.",
       "xr_button": "عرض في مساحتك",
-      "xr_button_label": "عرض في مساحتك، وتحميل العنصر في نافذة الواقع المعزز"
+      "xr_button_label": "عرض في مساحتك، وتحميل العنصر في نافذة الواقع المعزز",
+      "shop": "محل"
     },
     "load_more": {
       "label": "تحميل المزيد"
@@ -3404,7 +3405,8 @@
       "details_none": "دفتر العناوين الخاص بك فارغ",
       "view_addresses": "عرض العناوين",
       "return": "العودة إلى تفاصيل الحساب",
-      "shopping_cart": "عربة التسوق"
+      "shopping_cart": "عربة التسوق",
+      "account_button_shop": "تسوق الآن"
     },
     "account_fallback": "حساب",
     "activate_account": {
@@ -3436,6 +3438,9 @@
       "phone": "هاتف",
       "set_default": "احفظ كعنوان افتراضي لتسريع عملية الدفع",
       "add": "إضافة عنوان"
+    },
+    "order": {
+      "price": "سعر"
     }
   },
   "sections": {
@@ -3446,7 +3451,8 @@
       "headings": {
         "product": "منتج",
         "total": "المجموع",
-        "quantity": "كمية"
+        "quantity": "كمية",
+        "price": "سعر"
       },
       "update": "تحديث",
       "remove": "يزيل",
@@ -3488,7 +3494,8 @@
     "featured_collection": {
       "view_all": "عرض الكل",
       "view_all_label": "عرض جميع المنتجات في المجموعة {{ collection_name }}",
-      "collection": "اسم المجموعة"
+      "collection": "اسم المجموعة",
+      "link": "استكشاف المجموعة"
     },
     "collection_list": {
       "view_all": "عرض الكل"
